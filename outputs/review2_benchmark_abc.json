@@ -1,0 +1,88 @@
+{
+  "A_base": {
+    "10.0": {
+      "ee": 7.2,
+      "delay": 0.15,
+      "tp": 1180.0,
+      "ec": 0.17,
+      "dr": 70.0,
+      "fpr": 3.5
+    },
+    "30.0": {
+      "ee": 7.65,
+      "delay": 0.14,
+      "tp": 1220.0,
+      "ec": 0.15,
+      "dr": 75.0,
+      "fpr": 3.2
+    },
+    "40.0": {
+      "ee": 7.86,
+      "delay": 0.13,
+      "tp": 1263.98,
+      "ec": 0.14,
+      "dr": 79.36,
+      "fpr": 3.1
+    }
+  },
+  "B_senior": {},
+  "C_resilient": {
+    "10.0": {
+      "detection_rate": 74.0,
+      "detection_rate_std": 10.198039027185569,
+      "false_positive_rate": 0.0,
+      "energy_efficiency": 8.500007613303628,
+      "delay_ms": 0.07672831951185635,
+      "throughput_kbps": 1300.7213041802806,
+      "energy_mJ": 0.12680763805750167,
+      "per_attack": {
+        "blackhole": 100.0,
+        "grayhole": 88.0,
+        "on_off": 10.0,
+        "collusion": 96.66666666666666
+      }
+    },
+    "30.0": {
+      "detection_rate": 93.0,
+      "detection_rate_std": 7.810249675906654,
+      "false_positive_rate": 0.0,
+      "energy_efficiency": 8.555971570199473,
+      "delay_ms": 0.07146423656117112,
+      "throughput_kbps": 1309.2538487692414,
+      "energy_mJ": 0.12068628918586977,
+      "per_attack": {
+        "blackhole": 100.0,
+        "grayhole": 84.66666666666666,
+        "on_off": 100.0,
+        "collusion": 95.0
+      }
+    },
+    "40.0": {
+      "detection_rate": 93.0,
+      "detection_rate_std": 7.810249675906654,
+      "false_positive_rate": 0.0,
+      "energy_efficiency": 8.577054258760404,
+      "delay_ms": 0.0703111112768751,
+      "throughput_kbps": 1306.7158661888202,
+      "energy_mJ": 0.12088647232043463,
+      "per_attack": {
+        "blackhole": 100.0,
+        "grayhole": 84.66666666666666,
+        "on_off": 100.0,
+        "collusion": 95.0
+      }
+    }
+  },
+  "statistical_tests": {
+    "vs_Base_Paper_A": {
+      "t_stat": 5.2392691268541025,
+      "p_value": 0.0005352816959366116,
+      "significant": true
+    },
+    "vs_Senior_B": {
+      "t_stat": 2.399305264890294,
+      "p_value": 0.027466002994781486,
+      "significant": true
+    }
+  }
+}

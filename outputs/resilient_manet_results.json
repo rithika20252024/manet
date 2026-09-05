@@ -1,0 +1,47 @@
+{
+  "10.0": {
+    "detection_rate": 74.0,
+    "detection_rate_std": 10.198039027185569,
+    "false_positive_rate": 0.0,
+    "energy_efficiency": 8.500007613303628,
+    "delay_ms": 0.07672831951185635,
+    "throughput_kbps": 1300.7213041802806,
+    "energy_mJ": 0.12680763805750167,
+    "per_attack": {
+      "blackhole": 100.0,
+      "grayhole": 88.0,
+      "on_off": 10.0,
+      "collusion": 96.66666666666666
+    }
+  },
+  "30.0": {
+    "detection_rate": 93.0,
+    "detection_rate_std": 7.810249675906654,
+    "false_positive_rate": 0.0,
+    "energy_efficiency": 8.555971570199473,
+    "delay_ms": 0.07146423656117112,
+    "throughput_kbps": 1309.2538487692414,
+    "energy_mJ": 0.12068628918586977,
+    "per_attack": {
+      "blackhole": 100.0,
+      "grayhole": 84.66666666666666,
+      "on_off": 100.0,
+      "collusion": 95.0
+    }
+  },
+  "40.0": {
+    "detection_rate": 93.0,
+    "detection_rate_std": 7.810249675906654,
+    "false_positive_rate": 0.0,
+    "energy_efficiency": 8.577054258760404,
+    "delay_ms": 0.0703111112768751,
+    "throughput_kbps": 1306.7158661888202,
+    "energy_mJ": 0.12088647232043463,
+    "per_attack": {
+      "blackhole": 100.0,
+      "grayhole": 84.66666666666666,
+      "on_off": 100.0,
+      "collusion": 95.0
+    }
+  }
+}

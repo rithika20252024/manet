@@ -1,0 +1,29 @@
+{
+  "10.0": {
+    "energy_efficiency": 7.206402225970864,
+    "delay_ms": 0.1515375619767689,
+    "throughput_kbps": 1177.7077823893712,
+    "energy_mJ": 0.17051037199487568,
+    "detection_rate": 70.66619827568766,
+    "false_positive_rate": 3.496545352224088,
+    "threshold": 0.5
+  },
+  "30.0": {
+    "energy_efficiency": 7.637621227452028,
+    "delay_ms": 0.1419978851697777,
+    "throughput_kbps": 1218.898511085694,
+    "energy_mJ": 0.14917210434657507,
+    "detection_rate": 74.75134950748384,
+    "false_positive_rate": 3.2569369139148043,
+    "threshold": 0.5
+  },
+  "40.0": {
+    "energy_efficiency": 7.870674176606987,
+    "delay_ms": 0.13127509796714426,
+    "throughput_kbps": 1263.431387463437,
+    "energy_mJ": 0.1409014200337369,
+    "detection_rate": 79.6630818432923,
+    "false_positive_rate": 3.1405649190568474,
+    "threshold": 0.5
+  }
+}
