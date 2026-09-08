@@ -30,7 +30,7 @@ def main():
     
     print("  1. Codebase : /Users/rithika/Documents/CODE 2/resilient_manet/")
     print("  2. Results: outputs/review2_benchmark_abc.json")
-   print("#"*80 + "\n")
+    print("#"*80 + "\n")
 
 if __name__ == '__main__':
     main()

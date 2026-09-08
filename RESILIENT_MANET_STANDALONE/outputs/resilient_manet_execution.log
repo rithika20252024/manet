@@ -1,0 +1,91 @@
+
+==========================================================================================
+  RESILIENT-MANET: STANDALONE SIMULATION & BENCHMARK
+  Federated Adversarial Learning & Dynamic Trust Calibration for Secure MANET Routing
+==========================================================================================
+  Configuration : Nodes=100 | SimTime=40.0s | Runs=10 | Master Seed=42
+  Phase 1 (FTL) : 10 Cluster Heads | Privacy Budget epsilon=0.1, delta=1e-05
+  Phase 2 (GATM): Online Adversarial Sparring (Generator + Discriminator)
+  Phase 3 (BTC) : Dynamic Bayesian Trust Beta(alpha, beta) & Poisoning Recovery
+  Phase 4 (MAML): Few-Shot Attack-Agnostic Adaptation (<=5-10 windows)
+==========================================================================================
+
+[*] Executing Run  1/10 (seed=892)...
+    t=10.0s | PDR=0.990 | TP=1304.9 kbps | Delay=0.067ms | EE=8.60% | DR=100.0% | FPR=0.0%
+    t=30.0s | PDR=0.990 | TP=1304.1 kbps | Delay=0.067ms | EE=8.59% | DR=100.0% | FPR=0.0%
+    t=40.0s | PDR=0.990 | TP=1309.6 kbps | Delay=0.066ms | EE=8.63% | DR=100.0% | FPR=0.0%
+[*] Executing Run  2/10 (seed=7739)...
+    t=10.0s | PDR=0.990 | TP=1303.6 kbps | Delay=0.066ms | EE=8.54% | DR=100.0% | FPR=0.0%
+    t=30.0s | PDR=0.988 | TP=1307.7 kbps | Delay=0.068ms | EE=8.63% | DR=100.0% | FPR=0.0%
+    t=40.0s | PDR=0.987 | TP=1309.9 kbps | Delay=0.064ms | EE=8.62% | DR=100.0% | FPR=0.0%
+[*] Executing Run  3/10 (seed=6545)...
+    t=10.0s | PDR=0.987 | TP=1302.4 kbps | Delay=0.068ms | EE=8.60% | DR=100.0% | FPR=0.0%
+    t=30.0s | PDR=0.990 | TP=1304.2 kbps | Delay=0.069ms | EE=8.62% | DR=100.0% | FPR=0.0%
+    t=40.0s | PDR=0.979 | TP=1301.8 kbps | Delay=0.071ms | EE=8.58% | DR=80.0% | FPR=0.0%
+[*] Executing Run  4/10 (seed=4388)...
+    t=10.0s | PDR=0.985 | TP=1304.8 kbps | Delay=0.065ms | EE=8.67% | DR=100.0% | FPR=0.0%
+    t=30.0s | PDR=0.989 | TP=1310.4 kbps | Delay=0.065ms | EE=8.60% | DR=100.0% | FPR=0.0%
+    t=40.0s | PDR=0.989 | TP=1302.9 kbps | Delay=0.065ms | EE=8.62% | DR=100.0% | FPR=0.0%
+[*] Executing Run  5/10 (seed=4330)...
+    t=10.0s | PDR=0.990 | TP=1308.4 kbps | Delay=0.067ms | EE=8.63% | DR=100.0% | FPR=0.0%
+    t=30.0s | PDR=0.990 | TP=1308.7 kbps | Delay=0.068ms | EE=8.60% | DR=100.0% | FPR=0.0%
+    t=40.0s | PDR=0.978 | TP=1298.5 kbps | Delay=0.068ms | EE=8.55% | DR=80.0% | FPR=0.0%
+[*] Executing Run  6/10 (seed=8585)...
+    t=10.0s | PDR=0.984 | TP=1312.8 kbps | Delay=0.070ms | EE=8.57% | DR=100.0% | FPR=0.0%
+    t=30.0s | PDR=0.990 | TP=1310.6 kbps | Delay=0.067ms | EE=8.59% | DR=100.0% | FPR=0.0%
+    t=40.0s | PDR=0.990 | TP=1312.4 kbps | Delay=0.069ms | EE=8.58% | DR=100.0% | FPR=0.0%
+[*] Executing Run  7/10 (seed=859)...
+    t=10.0s | PDR=0.990 | TP=1309.7 kbps | Delay=0.069ms | EE=8.62% | DR=100.0% | FPR=0.0%
+    t=30.0s | PDR=0.990 | TP=1308.3 kbps | Delay=0.068ms | EE=8.58% | DR=100.0% | FPR=0.0%
+    t=40.0s | PDR=0.983 | TP=1305.4 kbps | Delay=0.069ms | EE=8.52% | DR=90.0% | FPR=0.0%
+[*] Executing Run  8/10 (seed=6973)...
+    t=10.0s | PDR=0.984 | TP=1300.9 kbps | Delay=0.068ms | EE=8.54% | DR=80.0% | FPR=0.0%
+    t=30.0s | PDR=0.987 | TP=1307.5 kbps | Delay=0.069ms | EE=8.59% | DR=100.0% | FPR=0.0%
+    t=40.0s | PDR=0.969 | TP=1291.8 kbps | Delay=0.075ms | EE=8.54% | DR=70.0% | FPR=0.0%
+[*] Executing Run  9/10 (seed=2014)...
+    t=10.0s | PDR=0.990 | TP=1305.4 kbps | Delay=0.066ms | EE=8.60% | DR=100.0% | FPR=0.0%
+    t=30.0s | PDR=0.988 | TP=1307.0 kbps | Delay=0.068ms | EE=8.55% | DR=100.0% | FPR=0.0%
+    t=40.0s | PDR=0.990 | TP=1305.4 kbps | Delay=0.069ms | EE=8.60% | DR=100.0% | FPR=0.0%
+[*] Executing Run 10/10 (seed=941)...
+    t=10.0s | PDR=0.986 | TP=1306.6 kbps | Delay=0.068ms | EE=8.58% | DR=100.0% | FPR=0.0%
+    t=30.0s | PDR=0.981 | TP=1304.1 kbps | Delay=0.067ms | EE=8.53% | DR=90.0% | FPR=0.0%
+    t=40.0s | PDR=0.990 | TP=1308.1 kbps | Delay=0.066ms | EE=8.58% | DR=100.0% | FPR=0.0%
+
+==========================================================================================
+  RESILIENT-MANET — AGGREGATED EXPERIMENTAL RESULTS (Mean over 10 Runs)
+==========================================================================================
+  Time     |   Detection Rate (%) |  Throughput (kbps) |   Delay (ms) |     EE (%) |    FPR (%)
+  --------------------------------------------------------------------------------------
+  t=10    |              98.00 % |            1305.95 |        0.067 |       8.59 |       0.00
+  t=30    |              99.00 % |            1307.27 |        0.068 |       8.59 |       0.00
+  t=40    |              92.00 % |            1304.59 |        0.068 |       8.58 |       0.00
+
+==========================================================================================
+  PER-ATTACK DETECTION BREAKDOWN AT t=40.0s (Overcoming Chilton's Limitations)
+==========================================================================================
+  * Blackhole Attack Detection Rate    :  100.0 %
+  * Grayhole Attack Detection Rate     :   63.3 %
+  * Collusion Attack Detection Rate    :  100.0 %  (Defeated by DP-FTL reputation FedAvg)
+  * On-Off Attack Detection Rate       :  100.0 %  [RESOLVED: 100% vs Chilton's 48.3% Ceiling]
+  * Novel Zero-Day Stealth Attack Rate :  100.0 %  [NEW: Identified via GATM Sparring & MAML]
+==========================================================================================
+
+==========================================================================================
+  COMPARATIVE PERFORMANCE EVALUATION (t = 40.0s)
+==========================================================================================
+  Metric                    |  Base Paper (Maya) |   Senior (Chilton) | Proposed RESILIENT-MANET
+  ----------------------------------------------------------------------------------------
+  Detection Rate (%)        |            79.36 % |            87.00 % |                  92.00 %
+  On-Off Detection Rate     |   Undifferentiated |            48.30 % |                  100.0 %
+  Zero-Day Detection Rate   |   Undifferentiated |        Not Handled |                  100.0 %
+  False Positive Rate (%)   |            ~3.10 % |             0.00 % |                   0.00 %
+  Throughput (kbps)         |            1263.98 |            1298.70 |                  1304.59
+  End-to-End Delay (ms)     |              0.130 |              0.090 |                    0.068
+  Energy Efficiency (%)     |             7.86 % |                 -- |                   8.58 %
+  Trust Computation         |        Centralized |   Semi-Centralized |      Decentralized (FTL)
+  Privacy Preservation      |    None (Raw Logs) |               None |       (ε=0.1, δ=1e-5)-DP
+  Poisoning Recovery        |               None |  Permanent Lockout |        Graceful Recovery
+==========================================================================================
+
+[✓] Empirical results saved to: /Users/rithika/Documents/CODE 2/RESILIENT_MANET_STANDALONE/outputs/resilient_manet_final_benchmark.json
+

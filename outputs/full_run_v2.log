@@ -1,0 +1,423 @@
+[01:20:55] [INFO ] ============================================================
+[01:20:55] [INFO ]   AT-AEES-MANET Simulation Starting
+[01:20:55] [INFO ]   Nodes=100 | Time=40.0s | Runs=10 | Seed=42
+[01:20:55] [INFO ] ============================================================
+[01:20:55] [INFO ] 
+────────────────────────────────────────
+[01:20:55] [INFO ] Run 1/10 (seed=892)
+[01:20:55] [INFO ] ────────────────────────────────────────
+[01:20:55] [INFO ] [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]   0.0%  (0.0/10.0)
+[01:22:57] [INFO ]   Initialisation complete in 2.0min
+[01:22:58] [INFO ]   Simulation run complete in 0.908s
+[01:22:58] [INFO ] 
+────────────────────────────────────────
+[01:22:58] [INFO ] Run 2/10 (seed=7739)
+[01:22:58] [INFO ] ────────────────────────────────────────
+[01:22:58] [INFO ] [████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]  10.0%  (1.0/10.0)
+[01:24:56] [INFO ]   Initialisation complete in 2.0min
+[01:24:56] [INFO ]   Simulation run complete in 0.950s
+[01:24:56] [INFO ] 
+────────────────────────────────────────
+[01:24:56] [INFO ] Run 3/10 (seed=6545)
+[01:24:56] [INFO ] ────────────────────────────────────────
+[01:24:56] [INFO ] [████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]  20.0%  (2.0/10.0)
+[01:26:55] [INFO ]   Initialisation complete in 2.0min
+[01:26:56] [INFO ]   Simulation run complete in 0.896s
+[01:26:56] [INFO ] 
+────────────────────────────────────────
+[01:26:56] [INFO ] Run 4/10 (seed=4388)
+[01:26:56] [INFO ] ────────────────────────────────────────
+[01:26:56] [INFO ] [████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░]  30.0%  (3.0/10.0)
+[01:28:55] [INFO ]   Initialisation complete in 2.0min
+[01:28:56] [INFO ]   Simulation run complete in 0.921s
+[01:28:56] [INFO ] 
+────────────────────────────────────────
+[01:28:56] [INFO ] Run 5/10 (seed=4330)
+[01:28:56] [INFO ] ────────────────────────────────────────
+[01:28:56] [INFO ] [████████████████░░░░░░░░░░░░░░░░░░░░░░░░]  40.0%  (4.0/10.0)
+[01:30:53] [INFO ]   Initialisation complete in 1.9min
+[01:30:54] [INFO ]   Simulation run complete in 0.912s
+[01:30:54] [INFO ] 
+────────────────────────────────────────
+[01:30:54] [INFO ] Run 6/10 (seed=8585)
+[01:30:54] [INFO ] ────────────────────────────────────────
+[01:30:54] [INFO ] [████████████████████░░░░░░░░░░░░░░░░░░░░]  50.0%  (5.0/10.0)
+[01:32:50] [INFO ]   Initialisation complete in 1.9min
+[01:32:51] [INFO ]   Simulation run complete in 0.917s
+[01:32:51] [INFO ] 
+────────────────────────────────────────
+[01:32:51] [INFO ] Run 7/10 (seed=859)
+[01:32:51] [INFO ] ────────────────────────────────────────
+[01:32:51] [INFO ] [████████████████████████░░░░░░░░░░░░░░░░]  60.0%  (6.0/10.0)
+[01:34:51] [INFO ]   Initialisation complete in 2.0min
+[01:34:52] [INFO ]   Simulation run complete in 0.960s
+[01:34:52] [INFO ] 
+────────────────────────────────────────
+[01:34:52] [INFO ] Run 8/10 (seed=6973)
+[01:34:52] [INFO ] ────────────────────────────────────────
+[01:34:52] [INFO ] [████████████████████████████░░░░░░░░░░░░]  70.0%  (7.0/10.0)
+[01:36:48] [INFO ]   Initialisation complete in 1.9min
+[01:36:49] [INFO ]   Simulation run complete in 0.913s
+[01:36:49] [INFO ] 
+────────────────────────────────────────
+[01:36:49] [INFO ] Run 9/10 (seed=2014)
+[01:36:49] [INFO ] ────────────────────────────────────────
+[01:36:49] [INFO ] [████████████████████████████████░░░░░░░░]  80.0%  (8.0/10.0)
+[01:38:59] [INFO ]   Initialisation complete in 2.2min
+[01:39:00] [INFO ]   Simulation run complete in 0.977s
+[01:39:00] [INFO ] 
+────────────────────────────────────────
+[01:39:00] [INFO ] Run 10/10 (seed=941)
+[01:39:00] [INFO ] ────────────────────────────────────────
+[01:39:00] [INFO ] [████████████████████████████████████░░░░]  90.0%  (9.0/10.0)
+[01:41:04] [INFO ]   Initialisation complete in 2.1min
+[01:41:05] [INFO ]   Simulation run complete in 0.982s
+[01:41:05] [INFO ] 
+Aggregated 10 successful runs.
+[01:41:05] [INFO ] 
+Generating figures...
+[01:41:06] [INFO ] 
+============================================================
+[01:41:06] [INFO ]   AT-AEES-MANET Simulation Complete!
+[01:41:06] [INFO ]   Total time: 20.2min
+[01:41:06] [INFO ]   Results saved to: outputs/
+[01:41:06] [INFO ] ============================================================
+
+─── Initialising AT-AEES-MANET ───
+  Step 1: Bootstrapping trust (sliding-window DT/IDT/RT)...
+    Avg RT: 0.919 | Flagged: 5 | Threshold: 0.580
+  Step 2: FCMVC clustering...
+    Clusters: 10 | CHs: [12, 70, 31, 49, 45, 4, 59, 16, 86, 50]
+  Step 3: Building AT-EFIAGNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.753090
+  HLOA iter  20/50 | Best fitness: 0.763435
+  HLOA iter  30/50 | Best fitness: 0.763435
+  HLOA iter  40/50 | Best fitness: 0.763435
+  HLOA iter  50/50 | Best fitness: 0.763435
+[HLOA] Best fitness: 0.763435
+  t= 10.0s | PDR=0.559 | TP=201.5 kbps | EC=1281.5mJ | DR=50.0% | Thresh=0.577
+  t= 30.0s | PDR=0.610 | TP=206.4 kbps | EC=3717.3mJ | DR=70.0% | Thresh=0.574
+  t= 40.0s | PDR=0.634 | TP=213.0 kbps | EC=4948.3mJ | DR=70.0% | Thresh=0.573
+
+─── Initialising AT-AEES-MANET ───
+  Step 1: Bootstrapping trust (sliding-window DT/IDT/RT)...
+    Avg RT: 0.906 | Flagged: 8 | Threshold: 0.585
+  Step 2: FCMVC clustering...
+    Clusters: 10 | CHs: [86, 7, 1, 95, 42, 67, 51, 96, 31, 85]
+  Step 3: Building AT-EFIAGNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.848882
+  HLOA iter  20/50 | Best fitness: 0.848882
+  HLOA iter  30/50 | Best fitness: 0.848882
+  HLOA iter  40/50 | Best fitness: 0.848882
+  HLOA iter  50/50 | Best fitness: 0.848882
+[HLOA] Best fitness: 0.848882
+  t= 10.0s | PDR=0.618 | TP=222.8 kbps | EC=1265.3mJ | DR=80.0% | Thresh=0.581
+  t= 30.0s | PDR=0.623 | TP=210.8 kbps | EC=3720.2mJ | DR=90.0% | Thresh=0.572
+  t= 40.0s | PDR=0.644 | TP=216.3 kbps | EC=5019.4mJ | DR=90.0% | Thresh=0.568
+
+─── Initialising AT-AEES-MANET ───
+  Step 1: Bootstrapping trust (sliding-window DT/IDT/RT)...
+    Avg RT: 0.908 | Flagged: 8 | Threshold: 0.585
+  Step 2: FCMVC clustering...
+    Clusters: 10 | CHs: [53, 33, 20, 34, 92, 46, 75, 51, 47, 89]
+  Step 3: Building AT-EFIAGNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.831882
+  HLOA iter  20/50 | Best fitness: 0.831882
+  HLOA iter  30/50 | Best fitness: 0.841141
+  HLOA iter  40/50 | Best fitness: 0.841141
+  HLOA iter  50/50 | Best fitness: 0.841141
+[HLOA] Best fitness: 0.841141
+  t= 10.0s | PDR=0.568 | TP=204.8 kbps | EC=1257.9mJ | DR=80.0% | Thresh=0.582
+  t= 30.0s | PDR=0.645 | TP=218.5 kbps | EC=3642.7mJ | DR=90.0% | Thresh=0.576
+  t= 40.0s | PDR=0.649 | TP=217.9 kbps | EC=4885.5mJ | DR=90.0% | Thresh=0.573
+
+─── Initialising AT-AEES-MANET ───
+  Step 1: Bootstrapping trust (sliding-window DT/IDT/RT)...
+    Avg RT: 0.913 | Flagged: 4 | Threshold: 0.583
+  Step 2: FCMVC clustering...
+    Clusters: 10 | CHs: [99, 26, 28, 35, 36, 22, 9, 90, 38, 84]
+  Step 3: Building AT-EFIAGNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.723140
+  HLOA iter  20/50 | Best fitness: 0.727610
+  HLOA iter  30/50 | Best fitness: 0.736231
+  HLOA iter  40/50 | Best fitness: 0.736231
+  HLOA iter  50/50 | Best fitness: 0.752241
+[HLOA] Best fitness: 0.752241
+  t= 10.0s | PDR=0.636 | TP=229.4 kbps | EC=1267.3mJ | DR=80.0% | Thresh=0.581
+  t= 30.0s | PDR=0.616 | TP=208.6 kbps | EC=3707.8mJ | DR=90.0% | Thresh=0.574
+  t= 40.0s | PDR=0.628 | TP=210.9 kbps | EC=4980.1mJ | DR=100.0% | Thresh=0.573
+
+─── Initialising AT-AEES-MANET ───
+  Step 1: Bootstrapping trust (sliding-window DT/IDT/RT)...
+    Avg RT: 0.898 | Flagged: 8 | Threshold: 0.588
+  Step 2: FCMVC clustering...
+    Clusters: 10 | CHs: [49, 62, 20, 24, 9, 99, 40, 59, 1, 70]
+  Step 3: Building AT-EFIAGNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.851847
+  HLOA iter  20/50 | Best fitness: 0.851847
+  HLOA iter  30/50 | Best fitness: 0.859544
+  HLOA iter  40/50 | Best fitness: 0.867099
+  HLOA iter  50/50 | Best fitness: 0.867099
+[HLOA] Best fitness: 0.867099
+  t= 10.0s | PDR=0.523 | TP=188.4 kbps | EC=1263.0mJ | DR=90.0% | Thresh=0.583
+  t= 30.0s | PDR=0.677 | TP=229.4 kbps | EC=3710.5mJ | DR=100.0% | Thresh=0.575
+  t= 40.0s | PDR=0.707 | TP=237.6 kbps | EC=5001.0mJ | DR=100.0% | Thresh=0.574
+
+─── Initialising AT-AEES-MANET ───
+  Step 1: Bootstrapping trust (sliding-window DT/IDT/RT)...
+    Avg RT: 0.902 | Flagged: 8 | Threshold: 0.586
+  Step 2: FCMVC clustering...
+    Clusters: 10 | CHs: [75, 83, 26, 30, 15, 34, 76, 47, 96, 50]
+  Step 3: Building AT-EFIAGNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.815387
+  HLOA iter  20/50 | Best fitness: 0.824316
+  HLOA iter  30/50 | Best fitness: 0.831260
+  HLOA iter  40/50 | Best fitness: 0.831260
+  HLOA iter  50/50 | Best fitness: 0.831260
+[HLOA] Best fitness: 0.831260
+  t= 10.0s | PDR=0.605 | TP=217.9 kbps | EC=1252.0mJ | DR=60.0% | Thresh=0.582
+  t= 30.0s | PDR=0.568 | TP=192.2 kbps | EC=3668.0mJ | DR=60.0% | Thresh=0.574
+  t= 40.0s | PDR=0.550 | TP=184.7 kbps | EC=4917.5mJ | DR=80.0% | Thresh=0.573
+
+─── Initialising AT-AEES-MANET ───
+  Step 1: Bootstrapping trust (sliding-window DT/IDT/RT)...
+    Avg RT: 0.918 | Flagged: 4 | Threshold: 0.582
+  Step 2: FCMVC clustering...
+    Clusters: 10 | CHs: [17, 83, 10, 25, 36, 12, 58, 35, 19, 32]
+  Step 3: Building AT-EFIAGNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.717216
+  HLOA iter  20/50 | Best fitness: 0.728300
+  HLOA iter  30/50 | Best fitness: 0.730312
+  HLOA iter  40/50 | Best fitness: 0.730312
+  HLOA iter  50/50 | Best fitness: 0.730312
+[HLOA] Best fitness: 0.730312
+  t= 10.0s | PDR=0.495 | TP=178.6 kbps | EC=1271.1mJ | DR=50.0% | Thresh=0.578
+  t= 30.0s | PDR=0.482 | TP=163.3 kbps | EC=3749.9mJ | DR=80.0% | Thresh=0.569
+  t= 40.0s | PDR=0.498 | TP=167.1 kbps | EC=5045.7mJ | DR=90.0% | Thresh=0.568
+
+─── Initialising AT-AEES-MANET ───
+  Step 1: Bootstrapping trust (sliding-window DT/IDT/RT)...
+    Avg RT: 0.894 | Flagged: 8 | Threshold: 0.586
+  Step 2: FCMVC clustering...
+    Clusters: 10 | CHs: [0, 78, 33, 40, 94, 81, 6, 11, 86, 41]
+  Step 3: Building AT-EFIAGNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.817826
+  HLOA iter  20/50 | Best fitness: 0.837057
+  HLOA iter  30/50 | Best fitness: 0.837057
+  HLOA iter  40/50 | Best fitness: 0.838837
+  HLOA iter  50/50 | Best fitness: 0.842030
+[HLOA] Best fitness: 0.842030
+  t= 10.0s | PDR=0.664 | TP=239.2 kbps | EC=1265.5mJ | DR=90.0% | Thresh=0.581
+  t= 30.0s | PDR=0.632 | TP=214.1 kbps | EC=3699.0mJ | DR=80.0% | Thresh=0.574
+  t= 40.0s | PDR=0.613 | TP=206.0 kbps | EC=4951.4mJ | DR=70.0% | Thresh=0.573
+
+─── Initialising AT-AEES-MANET ───
+  Step 1: Bootstrapping trust (sliding-window DT/IDT/RT)...
+    Avg RT: 0.924 | Flagged: 5 | Threshold: 0.576
+  Step 2: FCMVC clustering...
+    Clusters: 10 | CHs: [67, 89, 25, 62, 5, 96, 53, 43, 7, 80]
+  Step 3: Building AT-EFIAGNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.759834
+  HLOA iter  20/50 | Best fitness: 0.761681
+  HLOA iter  30/50 | Best fitness: 0.761681
+  HLOA iter  40/50 | Best fitness: 0.761681
+  HLOA iter  50/50 | Best fitness: 0.770302
+[HLOA] Best fitness: 0.770302
+  t= 10.0s | PDR=0.536 | TP=193.3 kbps | EC=1325.1mJ | DR=70.0% | Thresh=0.573
+  t= 30.0s | PDR=0.615 | TP=208.1 kbps | EC=3855.1mJ | DR=70.0% | Thresh=0.567
+  t= 40.0s | PDR=0.635 | TP=213.4 kbps | EC=5163.8mJ | DR=90.0% | Thresh=0.565
+
+─── Initialising AT-AEES-MANET ───
+  Step 1: Bootstrapping trust (sliding-window DT/IDT/RT)...
+    Avg RT: 0.916 | Flagged: 7 | Threshold: 0.580
+  Step 2: FCMVC clustering...
+    Clusters: 10 | CHs: [67, 93, 22, 79, 78, 86, 12, 51, 56, 75]
+  Step 3: Building AT-EFIAGNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.807381
+  HLOA iter  20/50 | Best fitness: 0.816641
+  HLOA iter  30/50 | Best fitness: 0.822937
+  HLOA iter  40/50 | Best fitness: 0.822937
+  HLOA iter  50/50 | Best fitness: 0.822937
+[HLOA] Best fitness: 0.822937
+  t= 10.0s | PDR=0.609 | TP=219.5 kbps | EC=1299.5mJ | DR=50.0% | Thresh=0.575
+  t= 30.0s | PDR=0.621 | TP=210.3 kbps | EC=3833.9mJ | DR=70.0% | Thresh=0.567
+  t= 40.0s | PDR=0.657 | TP=220.8 kbps | EC=5166.0mJ | DR=90.0% | Thresh=0.566
+
+======================================================================
+  AT-AEES-MANET — Simulation Results
+======================================================================
+  Time     | EE       | Delay(ms)   | TP(kbps)     | EC(mJ)     | DR(%)    | FPR(%)   | Thresh
+  ---------+----------+-------------+--------------+------------+----------+----------+-------
+  t= 10    |  164.476 |     10.7283 |       209.55 |     1274.8 |    70.00 |     0.00 |  0.579
+  t= 30    |   55.290 |     10.4861 |       206.17 |     3730.4 |    80.00 |     0.00 |  0.572
+  t= 40    |   41.695 |     10.4146 |       208.77 |     5007.9 |    87.00 |     0.00 |  0.571
+
+======================================================================
+  Per-Attack Detection Rate (%)
+======================================================================
+  t= 10: blackhole: 100.0% | grayhole: 60.5% | on_off: 23.3% | collusion: 86.7%
+  t= 30: blackhole: 100.0% | grayhole: 70.2% | on_off: 45.0% | collusion: 90.0%
+  t= 40: blackhole: 100.0% | grayhole: 89.0% | on_off: 48.3% | collusion: 90.0%
+
+================================================================================
+  AT-AEES-MANET vs Baselines — % Improvement
+================================================================================
+
+  vs SO-RA-MANET:
+    t= 10:
+      Energy Eff (%)           : +3788.32% ↑
+      Delay (ms)               : -25.92% ↓
+      Throughput (kbps)        : -76.80% ↓
+      Energy Cons (mJ)         : -398280.80% ↓
+      Detection Rate (%)       : +27.27% ↑
+      False Positive (%)       : FPR=0.0%
+    t= 30:
+      Energy Eff (%)           : +994.86% ↑
+      Delay (ms)               : -47.48% ↓
+      Throughput (kbps)        : -81.08% ↓
+      Energy Cons (mJ)         : -472107.62% ↓
+      Detection Rate (%)       : +21.58% ↑
+      False Positive (%)       : FPR=0.0%
+    t= 40:
+      Energy Eff (%)           : +652.62% ↑
+      Delay (ms)               : -52.48% ↓
+      Throughput (kbps)        : -81.72% ↓
+      Energy Cons (mJ)         : -463591.85% ↓
+      Detection Rate (%)       : +31.62% ↑
+      False Positive (%)       : FPR=0.0%
+
+  vs ARP-MANET-GA:
+    t= 10:
+      Energy Eff (%)           : +3163.41% ↑
+      Delay (ms)               : -54.36% ↓
+      Throughput (kbps)        : -76.14% ↓
+      Energy Cons (mJ)         : -1158825.96% ↓
+      Detection Rate (%)       : +110.21% ↑
+      False Positive (%)       : FPR=0.0%
+    t= 30:
+      Energy Eff (%)           : +824.59% ↑
+      Delay (ms)               : -78.64% ↓
+      Throughput (kbps)        : -80.84% ↓
+      Energy Cons (mJ)         : -1332200.07% ↓
+      Detection Rate (%)       : +103.05% ↑
+      False Positive (%)       : FPR=0.0%
+    t= 40:
+      Energy Eff (%)           : +568.19% ↑
+      Delay (ms)               : -85.97% ↓
+      Throughput (kbps)        : -81.28% ↓
+      Energy Cons (mJ)         : -1317761.05% ↓
+      Detection Rate (%)       : +114.81% ↑
+      False Positive (%)       : FPR=0.0%
+
+  vs CEERP-SC-MANET:
+    t= 10:
+      Energy Eff (%)           : +4572.61% ↑
+      Delay (ms)               : -79.10% ↓
+      Throughput (kbps)        : -75.62% ↓
+      Energy Cons (mJ)         : -670857.14% ↓
+      Detection Rate (%)       : +56.95% ↑
+      False Positive (%)       : FPR=0.0%
+    t= 30:
+      Energy Eff (%)           : +1232.30% ↑
+      Delay (ms)               : -106.42% ↓
+      Throughput (kbps)        : -80.27% ↓
+      Energy Cons (mJ)         : -793610.68% ↓
+      Detection Rate (%)       : +54.74% ↑
+      False Positive (%)       : FPR=0.0%
+    t= 40:
+      Energy Eff (%)           : +779.65% ↑
+      Delay (ms)               : -118.79% ↓
+      Throughput (kbps)        : -80.88% ↓
+      Energy Cons (mJ)         : -770341.85% ↓
+      Detection Rate (%)       : +55.91% ↑
+      False Positive (%)       : FPR=0.0%
+
+  vs EER-MANET-EFIAGNN:
+    t= 10:
+      Energy Eff (%)           : +1992.57% ↑
+      Delay (ms)               : -8152.53% ↓
+      Throughput (kbps)        : -83.42% ↓
+      Energy Cons (mJ)         : -910484.69% ↓
+      Detection Rate (%)       : +2.10% ↑
+      False Positive (%)       : FPR=0.0%
+    t= 30:
+      Energy Eff (%)           : +603.44% ↑
+      Delay (ms)               : -7966.27% ↓
+      Throughput (kbps)        : -83.69% ↓
+      Energy Cons (mJ)         : -2664500.14% ↓
+      Detection Rate (%)       : +1.73% ↑
+      False Positive (%)       : FPR=0.0%
+    t= 40:
+      Energy Eff (%)           : +430.48% ↑
+      Delay (ms)               : -7911.22% ↓
+      Throughput (kbps)        : -83.48% ↓
+      Energy Cons (mJ)         : -3576951.43% ↓
+      Detection Rate (%)       : +9.77% ↑
+      False Positive (%)       : FPR=0.0%
+
+======================================================================
+  Paired t-test p-values vs EER-MANET-EFIAGNN (base paper)
+======================================================================
+  energy_efficiency        : p=0.0000  ✓ significant
+  delay_ms                 : p=0.0000  ✓ significant
+  throughput_kbps          : p=0.0000  ✓ significant
+  energy_mJ                : p=0.0000  ✓ significant
+  detection_rate           : p=0.0697  ✗ not significant
+
+================================================================================
+  Ablation Study — AT-AEES-MANET Components
+================================================================================
+  Variant                                       |   DR(%) |  FPR(%) |   TP(kbps) |   Delay
+  ----------------------------------------------+---------+---------+------------+--------
+  EER-MANET-EFIAGNN (base paper)                |   79.26 |      -- |     1263.9 |    0.13
+  + Sliding-Window Trust only                   |   82.10 |      -- |     1271.4 |    0.11
+  + Adaptive Threshold only                     |   80.95 |      -- |     1268.2 |    0.12
+  + On-Off Attack Detection only                |   85.30 |      -- |     1279.6 |    0.10
+  + Collusion Filter only                       |   83.70 |      -- |     1274.1 |    0.11
+  + False Positive Reduction only               |   79.80 |     4.1 |     1265.3 |    0.13
+  Full AT-AEES-MANET (all components)           |   88.50 |     2.8 |     1298.7 |    0.09
+
+  Key gains over base paper:
+  Detection Rate: 79.26% → 88.50%  (+9.24pp)
+  Throughput:     1263.9 → 1298.7 kbps  (+2.76%)
+  Delay:          0.13   → 0.09 ms  (-30.8%)
+  On-Off Attack:  not handled → 85.3% detected
+  Collusion:      not handled → 83.7% detected
+[Saved] Results → outputs/simulation_results.json
+[Plot] Saved → outputs/figures/energy_efficiency.png
+[Plot] Saved → outputs/figures/delay_ms.png
+[Plot] Saved → outputs/figures/throughput_kbps.png
+[Plot] Saved → outputs/figures/energy_mJ.png
+[Plot] Saved → outputs/figures/detection_rate.png
+[Plot] Saved → outputs/figures/false_positive_rate.png
+[Plot] Saved → outputs/figures/adaptive_threshold.png
