@@ -1,91 +1,290 @@
+[01:35:08] [INFO ] ============================================================
+[01:35:08] [INFO ]   RESILIENT-MANET Simulation Starting
+[01:35:08] [INFO ]   Nodes=100 | Time=40.0s | Runs=10 | Seed=42
+[01:35:08] [INFO ] ============================================================
+[01:35:08] [INFO ] 
+────────────────────────────────────────
+[01:35:08] [INFO ] Run 1/10 (seed=892)
+[01:35:08] [INFO ] ────────────────────────────────────────
+[01:35:08] [INFO ] [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]   0.0%  (0.0/10.0)
 
-==========================================================================================
-  RESILIENT-MANET: STANDALONE SIMULATION & BENCHMARK
-  Federated Adversarial Learning & Dynamic Trust Calibration for Secure MANET Routing
-==========================================================================================
-  Configuration : Nodes=100 | SimTime=40.0s | Runs=10 | Master Seed=42
-  Phase 1 (FTL) : 10 Cluster Heads | Privacy Budget epsilon=0.1, delta=1e-05
-  Phase 2 (GATM): Online Adversarial Sparring (Generator + Discriminator)
-  Phase 3 (BTC) : Dynamic Bayesian Trust Beta(alpha, beta) & Poisoning Recovery
-  Phase 4 (MAML): Few-Shot Attack-Agnostic Adaptation (<=5-10 windows)
-==========================================================================================
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg Prior Trust: 0.500 | Malicious Nodes: 10 | Threshold: 0.500
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [np.int64(0), np.int64(11), np.int64(22), np.int64(33), np.int64(44), np.int64(55), np.int64(66), np.int64(77), np.int64(88), np.int64(99)]
+  Step 3: Initializing GATM Generator & Discriminator Sparring (dim=53249)...
+  Step 4: Federated Differential Privacy Parameter Tuning (epsilon=0.1, delta=1e-05)...
 
-[*] Executing Run  1/10 (seed=892)...
-    t=10.0s | PDR=0.990 | TP=1304.9 kbps | Delay=0.067ms | EE=8.60% | DR=100.0% | FPR=0.0%
-    t=30.0s | PDR=0.990 | TP=1304.1 kbps | Delay=0.067ms | EE=8.59% | DR=100.0% | FPR=0.0%
-    t=40.0s | PDR=0.990 | TP=1309.6 kbps | Delay=0.066ms | EE=8.63% | DR=100.0% | FPR=0.0%
-[*] Executing Run  2/10 (seed=7739)...
-    t=10.0s | PDR=0.990 | TP=1303.6 kbps | Delay=0.066ms | EE=8.54% | DR=100.0% | FPR=0.0%
-    t=30.0s | PDR=0.988 | TP=1307.7 kbps | Delay=0.068ms | EE=8.63% | DR=100.0% | FPR=0.0%
-    t=40.0s | PDR=0.987 | TP=1309.9 kbps | Delay=0.064ms | EE=8.62% | DR=100.0% | FPR=0.0%
-[*] Executing Run  3/10 (seed=6545)...
-    t=10.0s | PDR=0.987 | TP=1302.4 kbps | Delay=0.068ms | EE=8.60% | DR=100.0% | FPR=0.0%
-    t=30.0s | PDR=0.990 | TP=1304.2 kbps | Delay=0.069ms | EE=8.62% | DR=100.0% | FPR=0.0%
-    t=40.0s | PDR=0.979 | TP=1301.8 kbps | Delay=0.071ms | EE=8.58% | DR=80.0% | FPR=0.0%
-[*] Executing Run  4/10 (seed=4388)...
-    t=10.0s | PDR=0.985 | TP=1304.8 kbps | Delay=0.065ms | EE=8.67% | DR=100.0% | FPR=0.0%
-    t=30.0s | PDR=0.989 | TP=1310.4 kbps | Delay=0.065ms | EE=8.60% | DR=100.0% | FPR=0.0%
-    t=40.0s | PDR=0.989 | TP=1302.9 kbps | Delay=0.065ms | EE=8.62% | DR=100.0% | FPR=0.0%
-[*] Executing Run  5/10 (seed=4330)...
-    t=10.0s | PDR=0.990 | TP=1308.4 kbps | Delay=0.067ms | EE=8.63% | DR=100.0% | FPR=0.0%
-    t=30.0s | PDR=0.990 | TP=1308.7 kbps | Delay=0.068ms | EE=8.60% | DR=100.0% | FPR=0.0%
-    t=40.0s | PDR=0.978 | TP=1298.5 kbps | Delay=0.068ms | EE=8.55% | DR=80.0% | FPR=0.0%
-[*] Executing Run  6/10 (seed=8585)...
-    t=10.0s | PDR=0.984 | TP=1312.8 kbps | Delay=0.070ms | EE=8.57% | DR=100.0% | FPR=0.0%
-    t=30.0s | PDR=0.990 | TP=1310.6 kbps | Delay=0.067ms | EE=8.59% | DR=100.0% | FPR=0.0%
-    t=40.0s | PDR=0.990 | TP=1312.4 kbps | Delay=0.069ms | EE=8.58% | DR=100.0% | FPR=0.0%
-[*] Executing Run  7/10 (seed=859)...
-    t=10.0s | PDR=0.990 | TP=1309.7 kbps | Delay=0.069ms | EE=8.62% | DR=100.0% | FPR=0.0%
-    t=30.0s | PDR=0.990 | TP=1308.3 kbps | Delay=0.068ms | EE=8.58% | DR=100.0% | FPR=0.0%
-    t=40.0s | PDR=0.983 | TP=1305.4 kbps | Delay=0.069ms | EE=8.52% | DR=90.0% | FPR=0.0%
-[*] Executing Run  8/10 (seed=6973)...
-    t=10.0s | PDR=0.984 | TP=1300.9 kbps | Delay=0.068ms | EE=8.54% | DR=80.0% | FPR=0.0%
-    t=30.0s | PDR=0.987 | TP=1307.5 kbps | Delay=0.069ms | EE=8.59% | DR=100.0% | FPR=0.0%
-    t=40.0s | PDR=0.969 | TP=1291.8 kbps | Delay=0.075ms | EE=8.54% | DR=70.0% | FPR=0.0%
-[*] Executing Run  9/10 (seed=2014)...
-    t=10.0s | PDR=0.990 | TP=1305.4 kbps | Delay=0.066ms | EE=8.60% | DR=100.0% | FPR=0.0%
-    t=30.0s | PDR=0.988 | TP=1307.0 kbps | Delay=0.068ms | EE=8.55% | DR=100.0% | FPR=0.0%
-    t=40.0s | PDR=0.990 | TP=1305.4 kbps | Delay=0.069ms | EE=8.60% | DR=100.0% | FPR=0.0%
-[*] Executing Run 10/10 (seed=941)...
-    t=10.0s | PDR=0.986 | TP=1306.6 kbps | Delay=0.068ms | EE=8.58% | DR=100.0% | FPR=0.0%
-    t=30.0s | PDR=0.981 | TP=1304.1 kbps | Delay=0.067ms | EE=8.53% | DR=90.0% | FPR=0.0%
-    t=40.0s | PDR=0.990 | TP=1308.1 kbps | Delay=0.066ms | EE=8.58% | DR=100.0% | FPR=0.0%
+[FTL-GATM] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.753649
+  HLOA iter  20/50 | Best fitness: 0.767165
+  HLOA iter  30/50 | Best fitness: 0.778085
+  HLOA iter  40/50 | Best fitness: 0.792999
+  HLOA iter  50/50 | Best fitness: 0.803957
+[FTL-GATM] Best fitness: 0.803957
+  t= 10.0s | PDR=0.990 | TP=1311.7 kbps | EC=126.2mJ | DR=100.0% | Thresh=0.500
+  t= 30.0s | PDR=0.990 | TP=1306.6 kbps | EC=118.3mJ | DR=100.0% | Thresh=0.500
+  t= 40.0s | PDR=0.984 | TP=1306.1 kbps | EC=119.6mJ | DR=90.0% | Thresh=0.500
+[01:35:08] [INFO ]   Initialisation complete in 0.003s
+[01:35:08] [INFO ]   Simulation run complete in 0.163s
+[01:35:08] [INFO ] 
+────────────────────────────────────────
+[01:35:08] [INFO ] Run 2/10 (seed=7739)
+[01:35:08] [INFO ] ────────────────────────────────────────
+[01:35:08] [INFO ] [████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]  10.0%  (1.0/10.0)
 
-==========================================================================================
-  RESILIENT-MANET — AGGREGATED EXPERIMENTAL RESULTS (Mean over 10 Runs)
-==========================================================================================
-  Time     |   Detection Rate (%) |  Throughput (kbps) |   Delay (ms) |     EE (%) |    FPR (%)
-  --------------------------------------------------------------------------------------
-  t=10    |              98.00 % |            1305.95 |        0.067 |       8.59 |       0.00
-  t=30    |              99.00 % |            1307.27 |        0.068 |       8.59 |       0.00
-  t=40    |              92.00 % |            1304.59 |        0.068 |       8.58 |       0.00
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg Prior Trust: 0.500 | Malicious Nodes: 10 | Threshold: 0.500
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [np.int64(0), np.int64(11), np.int64(22), np.int64(33), np.int64(44), np.int64(55), np.int64(66), np.int64(77), np.int64(88), np.int64(99)]
+  Step 3: Initializing GATM Generator & Discriminator Sparring (dim=53249)...
+  Step 4: Federated Differential Privacy Parameter Tuning (epsilon=0.1, delta=1e-05)...
 
-==========================================================================================
-  PER-ATTACK DETECTION BREAKDOWN AT t=40.0s (Overcoming Chilton's Limitations)
-==========================================================================================
-  * Blackhole Attack Detection Rate    :  100.0 %
-  * Grayhole Attack Detection Rate     :   63.3 %
-  * Collusion Attack Detection Rate    :  100.0 %  (Defeated by DP-FTL reputation FedAvg)
-  * On-Off Attack Detection Rate       :  100.0 %  [RESOLVED: 100% vs Chilton's 48.3% Ceiling]
-  * Novel Zero-Day Stealth Attack Rate :  100.0 %  [NEW: Identified via GATM Sparring & MAML]
-==========================================================================================
+[FTL-GATM] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.770894
+  HLOA iter  20/50 | Best fitness: 0.785300
+  HLOA iter  30/50 | Best fitness: 0.793990
+  HLOA iter  40/50 | Best fitness: 0.805944
+  HLOA iter  50/50 | Best fitness: 0.811447
+[FTL-GATM] Best fitness: 0.811447
+  t= 10.0s | PDR=0.987 | TP=1305.9 kbps | EC=118.6mJ | DR=100.0% | Thresh=0.500
+  t= 30.0s | PDR=0.990 | TP=1304.9 kbps | EC=119.0mJ | DR=100.0% | Thresh=0.500
+  t= 40.0s | PDR=0.987 | TP=1305.4 kbps | EC=119.8mJ | DR=100.0% | Thresh=0.500
+[01:35:09] [INFO ]   Initialisation complete in 0.003s
+[01:35:09] [INFO ]   Simulation run complete in 0.161s
+[01:35:09] [INFO ] 
+────────────────────────────────────────
+[01:35:09] [INFO ] Run 3/10 (seed=6545)
+[01:35:09] [INFO ] ────────────────────────────────────────
+[01:35:09] [INFO ] [████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]  20.0%  (2.0/10.0)
 
-==========================================================================================
-  COMPARATIVE PERFORMANCE EVALUATION (t = 40.0s)
-==========================================================================================
-  Metric                    |  Base Paper (Maya) |   Senior (Chilton) | Proposed RESILIENT-MANET
-  ----------------------------------------------------------------------------------------
-  Detection Rate (%)        |            79.36 % |            87.00 % |                  92.00 %
-  On-Off Detection Rate     |   Undifferentiated |            48.30 % |                  100.0 %
-  Zero-Day Detection Rate   |   Undifferentiated |        Not Handled |                  100.0 %
-  False Positive Rate (%)   |            ~3.10 % |             0.00 % |                   0.00 %
-  Throughput (kbps)         |            1263.98 |            1298.70 |                  1304.59
-  End-to-End Delay (ms)     |              0.130 |              0.090 |                    0.068
-  Energy Efficiency (%)     |             7.86 % |                 -- |                   8.58 %
-  Trust Computation         |        Centralized |   Semi-Centralized |      Decentralized (FTL)
-  Privacy Preservation      |    None (Raw Logs) |               None |       (ε=0.1, δ=1e-5)-DP
-  Poisoning Recovery        |               None |  Permanent Lockout |        Graceful Recovery
-==========================================================================================
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg Prior Trust: 0.500 | Malicious Nodes: 10 | Threshold: 0.500
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [np.int64(0), np.int64(11), np.int64(22), np.int64(33), np.int64(44), np.int64(55), np.int64(66), np.int64(77), np.int64(88), np.int64(99)]
+  Step 3: Initializing GATM Generator & Discriminator Sparring (dim=53249)...
+  Step 4: Federated Differential Privacy Parameter Tuning (epsilon=0.1, delta=1e-05)...
 
-[✓] Empirical results saved to: /Users/rithika/Documents/CODE 2/RESILIENT_MANET_STANDALONE/outputs/resilient_manet_final_benchmark.json
+[FTL-GATM] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.776911
+  HLOA iter  20/50 | Best fitness: 0.782081
+  HLOA iter  30/50 | Best fitness: 0.791508
+  HLOA iter  40/50 | Best fitness: 0.801484
+  HLOA iter  50/50 | Best fitness: 0.810328
+[FTL-GATM] Best fitness: 0.810328
+  t= 10.0s | PDR=0.989 | TP=1308.5 kbps | EC=122.3mJ | DR=100.0% | Thresh=0.500
+  t= 30.0s | PDR=0.990 | TP=1307.0 kbps | EC=120.4mJ | DR=100.0% | Thresh=0.500
+  t= 40.0s | PDR=0.988 | TP=1308.1 kbps | EC=117.3mJ | DR=100.0% | Thresh=0.500
+[01:35:09] [INFO ]   Initialisation complete in 0.002s
+[01:35:09] [INFO ]   Simulation run complete in 0.162s
+[01:35:09] [INFO ] 
+────────────────────────────────────────
+[01:35:09] [INFO ] Run 4/10 (seed=4388)
+[01:35:09] [INFO ] ────────────────────────────────────────
+[01:35:09] [INFO ] [████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░]  30.0%  (3.0/10.0)
+
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg Prior Trust: 0.500 | Malicious Nodes: 10 | Threshold: 0.500
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [np.int64(0), np.int64(11), np.int64(22), np.int64(33), np.int64(44), np.int64(55), np.int64(66), np.int64(77), np.int64(88), np.int64(99)]
+  Step 3: Initializing GATM Generator & Discriminator Sparring (dim=53249)...
+  Step 4: Federated Differential Privacy Parameter Tuning (epsilon=0.1, delta=1e-05)...
+
+[FTL-GATM] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.789556
+  HLOA iter  20/50 | Best fitness: 0.803310
+  HLOA iter  30/50 | Best fitness: 0.808595
+  HLOA iter  40/50 | Best fitness: 0.822478
+  HLOA iter  50/50 | Best fitness: 0.832521
+[FTL-GATM] Best fitness: 0.832521
+  t= 10.0s | PDR=0.990 | TP=1305.8 kbps | EC=126.4mJ | DR=100.0% | Thresh=0.500
+  t= 30.0s | PDR=0.990 | TP=1307.1 kbps | EC=119.9mJ | DR=100.0% | Thresh=0.500
+  t= 40.0s | PDR=0.990 | TP=1305.2 kbps | EC=120.5mJ | DR=100.0% | Thresh=0.500
+[01:35:09] [INFO ]   Initialisation complete in 0.002s
+[01:35:09] [INFO ]   Simulation run complete in 0.162s
+[01:35:09] [INFO ] 
+────────────────────────────────────────
+[01:35:09] [INFO ] Run 5/10 (seed=4330)
+[01:35:09] [INFO ] ────────────────────────────────────────
+[01:35:09] [INFO ] [████████████████░░░░░░░░░░░░░░░░░░░░░░░░]  40.0%  (4.0/10.0)
+
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg Prior Trust: 0.500 | Malicious Nodes: 10 | Threshold: 0.500
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [np.int64(0), np.int64(11), np.int64(22), np.int64(33), np.int64(44), np.int64(55), np.int64(66), np.int64(77), np.int64(88), np.int64(99)]
+  Step 3: Initializing GATM Generator & Discriminator Sparring (dim=53249)...
+  Step 4: Federated Differential Privacy Parameter Tuning (epsilon=0.1, delta=1e-05)...
+
+[FTL-GATM] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.802771
+  HLOA iter  20/50 | Best fitness: 0.809438
+  HLOA iter  30/50 | Best fitness: 0.823254
+  HLOA iter  40/50 | Best fitness: 0.836950
+  HLOA iter  50/50 | Best fitness: 0.849261
+[FTL-GATM] Best fitness: 0.849261
+  t= 10.0s | PDR=0.990 | TP=1308.4 kbps | EC=119.9mJ | DR=100.0% | Thresh=0.500
+  t= 30.0s | PDR=0.990 | TP=1308.7 kbps | EC=124.7mJ | DR=100.0% | Thresh=0.500
+  t= 40.0s | PDR=0.978 | TP=1298.5 kbps | EC=122.7mJ | DR=80.0% | Thresh=0.500
+[01:35:09] [INFO ]   Initialisation complete in 0.003s
+[01:35:09] [INFO ]   Simulation run complete in 0.162s
+[01:35:09] [INFO ] 
+────────────────────────────────────────
+[01:35:09] [INFO ] Run 6/10 (seed=8585)
+[01:35:09] [INFO ] ────────────────────────────────────────
+[01:35:09] [INFO ] [████████████████████░░░░░░░░░░░░░░░░░░░░]  50.0%  (5.0/10.0)
+
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg Prior Trust: 0.500 | Malicious Nodes: 10 | Threshold: 0.500
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [np.int64(0), np.int64(11), np.int64(22), np.int64(33), np.int64(44), np.int64(55), np.int64(66), np.int64(77), np.int64(88), np.int64(99)]
+  Step 3: Initializing GATM Generator & Discriminator Sparring (dim=53249)...
+  Step 4: Federated Differential Privacy Parameter Tuning (epsilon=0.1, delta=1e-05)...
+
+[FTL-GATM] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.813445
+  HLOA iter  20/50 | Best fitness: 0.821010
+  HLOA iter  30/50 | Best fitness: 0.832476
+  HLOA iter  40/50 | Best fitness: 0.840484
+  HLOA iter  50/50 | Best fitness: 0.847593
+[FTL-GATM] Best fitness: 0.847593
+  t= 10.0s | PDR=0.987 | TP=1311.8 kbps | EC=117.7mJ | DR=100.0% | Thresh=0.500
+  t= 30.0s | PDR=0.990 | TP=1310.6 kbps | EC=120.5mJ | DR=100.0% | Thresh=0.500
+  t= 40.0s | PDR=0.990 | TP=1312.4 kbps | EC=119.6mJ | DR=100.0% | Thresh=0.500
+[01:35:09] [INFO ]   Initialisation complete in 0.002s
+[01:35:09] [INFO ]   Simulation run complete in 0.162s
+[01:35:09] [INFO ] 
+────────────────────────────────────────
+[01:35:09] [INFO ] Run 7/10 (seed=859)
+[01:35:09] [INFO ] ────────────────────────────────────────
+[01:35:09] [INFO ] [████████████████████████░░░░░░░░░░░░░░░░]  60.0%  (6.0/10.0)
+
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg Prior Trust: 0.500 | Malicious Nodes: 10 | Threshold: 0.500
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [np.int64(0), np.int64(11), np.int64(22), np.int64(33), np.int64(44), np.int64(55), np.int64(66), np.int64(77), np.int64(88), np.int64(99)]
+  Step 3: Initializing GATM Generator & Discriminator Sparring (dim=53249)...
+  Step 4: Federated Differential Privacy Parameter Tuning (epsilon=0.1, delta=1e-05)...
+
+[FTL-GATM] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.828817
+  HLOA iter  20/50 | Best fitness: 0.837939
+  HLOA iter  30/50 | Best fitness: 0.850431
+  HLOA iter  40/50 | Best fitness: 0.857053
+  HLOA iter  50/50 | Best fitness: 0.864294
+[FTL-GATM] Best fitness: 0.864294
+  t= 10.0s | PDR=0.990 | TP=1304.5 kbps | EC=117.6mJ | DR=100.0% | Thresh=0.500
+  t= 30.0s | PDR=0.990 | TP=1305.6 kbps | EC=123.0mJ | DR=100.0% | Thresh=0.500
+  t= 40.0s | PDR=0.986 | TP=1301.1 kbps | EC=122.9mJ | DR=90.0% | Thresh=0.500
+[01:35:09] [INFO ]   Initialisation complete in 0.002s
+[01:35:09] [INFO ]   Simulation run complete in 0.161s
+[01:35:09] [INFO ] 
+────────────────────────────────────────
+[01:35:09] [INFO ] Run 8/10 (seed=6973)
+[01:35:09] [INFO ] ────────────────────────────────────────
+[01:35:09] [INFO ] [████████████████████████████░░░░░░░░░░░░]  70.0%  (7.0/10.0)
+
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg Prior Trust: 0.500 | Malicious Nodes: 10 | Threshold: 0.500
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [np.int64(0), np.int64(11), np.int64(22), np.int64(33), np.int64(44), np.int64(55), np.int64(66), np.int64(77), np.int64(88), np.int64(99)]
+  Step 3: Initializing GATM Generator & Discriminator Sparring (dim=53249)...
+  Step 4: Federated Differential Privacy Parameter Tuning (epsilon=0.1, delta=1e-05)...
+
+[FTL-GATM] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.842088
+  HLOA iter  20/50 | Best fitness: 0.850379
+  HLOA iter  30/50 | Best fitness: 0.864104
+  HLOA iter  40/50 | Best fitness: 0.865000
+  HLOA iter  50/50 | Best fitness: 0.865000
+[FTL-GATM] Best fitness: 0.865000
+  t= 10.0s | PDR=0.987 | TP=1304.8 kbps | EC=122.8mJ | DR=100.0% | Thresh=0.500
+  t= 30.0s | PDR=0.988 | TP=1307.3 kbps | EC=119.1mJ | DR=100.0% | Thresh=0.500
+  t= 40.0s | PDR=0.990 | TP=1307.2 kbps | EC=120.1mJ | DR=100.0% | Thresh=0.500
+[01:35:10] [INFO ]   Initialisation complete in 0.002s
+[01:35:10] [INFO ]   Simulation run complete in 0.161s
+[01:35:10] [INFO ] 
+────────────────────────────────────────
+[01:35:10] [INFO ] Run 9/10 (seed=2014)
+[01:35:10] [INFO ] ────────────────────────────────────────
+[01:35:10] [INFO ] [████████████████████████████████░░░░░░░░]  80.0%  (8.0/10.0)
+
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg Prior Trust: 0.500 | Malicious Nodes: 10 | Threshold: 0.500
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [np.int64(0), np.int64(11), np.int64(22), np.int64(33), np.int64(44), np.int64(55), np.int64(66), np.int64(77), np.int64(88), np.int64(99)]
+  Step 3: Initializing GATM Generator & Discriminator Sparring (dim=53249)...
+  Step 4: Federated Differential Privacy Parameter Tuning (epsilon=0.1, delta=1e-05)...
+
+[FTL-GATM] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.850091
+  HLOA iter  20/50 | Best fitness: 0.855577
+  HLOA iter  30/50 | Best fitness: 0.865000
+  HLOA iter  40/50 | Best fitness: 0.865000
+  HLOA iter  50/50 | Best fitness: 0.865000
+[FTL-GATM] Best fitness: 0.865000
+  t= 10.0s | PDR=0.990 | TP=1306.5 kbps | EC=118.3mJ | DR=100.0% | Thresh=0.500
+  t= 30.0s | PDR=0.989 | TP=1309.2 kbps | EC=120.8mJ | DR=100.0% | Thresh=0.500
+  t= 40.0s | PDR=0.990 | TP=1311.7 kbps | EC=120.6mJ | DR=100.0% | Thresh=0.500
+[01:35:10] [INFO ]   Initialisation complete in 0.002s
+[01:35:10] [INFO ]   Simulation run complete in 0.162s
+[01:35:10] [INFO ] 
+────────────────────────────────────────
+[01:35:10] [INFO ] Run 10/10 (seed=941)
+[01:35:10] [INFO ] ────────────────────────────────────────
+[01:35:10] [INFO ] [████████████████████████████████████░░░░]  90.0%  (9.0/10.0)
+
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg Prior Trust: 0.500 | Malicious Nodes: 10 | Threshold: 0.500
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [np.int64(0), np.int64(11), np.int64(22), np.int64(33), np.int64(44), np.int64(55), np.int64(66), np.int64(77), np.int64(88), np.int64(99)]
+  Step 3: Initializing GATM Generator & Discriminator Sparring (dim=53249)...
+  Step 4: Federated Differential Privacy Parameter Tuning (epsilon=0.1, delta=1e-05)...
+
+[FTL-GATM] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.865000
+  HLOA iter  20/50 | Best fitness: 0.865000
+  HLOA iter  30/50 | Best fitness: 0.865000
+  HLOA iter  40/50 | Best fitness: 0.865000
+  HLOA iter  50/50 | Best fitness: 0.865000
+[FTL-GATM] Best fitness: 0.865000
+  t= 10.0s | PDR=0.990 | TP=1306.1 kbps | EC=125.0mJ | DR=100.0% | Thresh=0.500
+  t= 30.0s | PDR=0.987 | TP=1305.5 kbps | EC=120.0mJ | DR=100.0% | Thresh=0.500
+  t= 40.0s | PDR=0.988 | TP=1308.6 kbps | EC=119.1mJ | DR=100.0% | Thresh=0.500
+[01:35:10] [INFO ]   Initialisation complete in 0.002s
+[01:35:10] [INFO ]   Simulation run complete in 0.160s
+[01:35:10] [INFO ] 
+Aggregated 10 successful runs.
+[01:35:10] [INFO ] 
+Generating figures...
+[01:35:10] [INFO ] 
+============================================================
+[01:35:10] [INFO ]   RESILIENT-MANET Simulation Complete!
+[01:35:10] [INFO ]   Total time: 1.643s
+[01:35:10] [INFO ]   Results saved to: RESILIENT_MANET_STANDALONE/outputs/
+[01:35:10] [INFO ] ============================================================
+
+=====================================================================================
+  RESILIENT-MANET — Simulation Results
+=====================================================================================
+  Time     |   EE (%) |  Delay(ms) |    TP (kbps) |    EC (mJ) |   DR (%) |  FPR (%) |   Thresh
+  ---------------------------------------------------------------------------------
+  t=10    |     8.61 |     0.0666 |      1307.39 |      0.121 |   100.00 |     0.00 |    0.500
+  t=30    |     8.60 |     0.0673 |      1307.25 |      0.121 |   100.00 |     0.00 |    0.500
+  t=40    |     8.57 |     0.0668 |      1306.44 |      0.120 |    96.00 |     0.00 |    0.500
+
+=====================================================================================
+  Per-Attack Detection Rate (%) at t = 40s
+=====================================================================================
+  t= 40: blackhole: 100.0% | grayhole: 100.0% | on_off: 100.0% | collusion: 100.0% | zero_day: 100.0%
+=====================================================================================
 
