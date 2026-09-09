@@ -70,9 +70,41 @@ def main():
         # Step 1-4 Logging Detail
         print(f"\n─── Initialising RESILIENT-MANET ───")
         print(f"  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...")
-        rng = np.random.default_rng(s)
-        sim = ResilientMANETSimulationEngine(n_nodes=config.N_NODES, sim_time=config.SIM_TIME, rng=rng, seed=s)
-        
+        # Run NS-3 simulation (standalone) and parse its trace
+        ns3_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ns3_scripts')
+        # Ensure NS-3 is built; assume waf is available in the ns3_scripts directory
+        # Execute the NS-3 scenario
+        os.system(f"cd {ns3_dir} && ./waf --run resilient_manet")
+        # Parse generated trace file (assumed name resilient_manet_trace.tr)
+        trace_path = os.path.join(ns3_dir, 'resilient_manet_trace.tr')
+        try:
+            from RESILIENT_MANET_STANDALONE.ns3_scripts.ns3_trace_parser import parse_ns3_trace_data
+            successes, drops, energies = parse_ns3_trace_data(trace_path, n_nodes=config.N_NODES)
+        except Exception as e:
+            print(f"[WARN] NS-3 trace parsing failed: {e}")
+            successes = drops = energies = None
+        # Build external feature matrix H (9-D) using parsed data where available
+        external_H = None
+        if successes is not None:
+            # Normalize energies
+            norm_energy = energies / config.E_INITIAL
+            # Simple placeholder for other features (positions, trust, etc.)
+            placeholder = np.zeros((config.N_NODES, 6))
+            external_H = np.column_stack((placeholder, norm_energy, successes, drops))
+            # Trim/pad to required dimension
+            if external_H.shape[1] > config.GATM_FEATURE_DIM:
+                external_H = external_H[:, :config.GATM_FEATURE_DIM]
+            elif external_H.shape[1] < config.GATM_FEATURE_DIM:
+                pad = np.zeros((config.N_NODES, config.GATM_FEATURE_DIM - external_H.shape[1]))
+                external_H = np.hstack((external_H, pad))
+        # Create simulation engine with external feature matrix if available
+        sim = ResilientMANETSimulationEngine(
+            n_nodes=config.N_NODES,
+            sim_time=config.SIM_TIME,
+            rng=rng,
+            seed=s,
+            external_H=external_H
+        )        
         avg_rt = np.mean(sim.bayes_engine.get_all_posterior_means())
         flagged_count = sum(1 for m in sim.malicious_ids)
         print(f"    Avg Prior Trust: {avg_rt:.3f} | Malicious Nodes: {flagged_count} | Threshold: 0.500")

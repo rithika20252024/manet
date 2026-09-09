@@ -17,7 +17,19 @@ from RESILIENT_MANET_STANDALONE.modules.phase4_maml import MAMLTrustModel
 
 class ResilientMANETSimulationEngine:
     def __init__(self, n_nodes: int = config.N_NODES, sim_time: float = config.SIM_TIME,
-                 rng: np.random.Generator = None, seed: int = config.SEED):
+                 rng: np.random.Generator = None, seed: int = config.SEED, external_H: np.ndarray = None):
+        self.n_nodes = n_nodes
+        self.sim_time = sim_time
+        self.rng = rng if rng is not None else np.random.default_rng(seed)
+        self.seed = seed
+        self.external_H = external_H
+        
+        # Topology
+        self.positions = self.rng.uniform(0, config.AREA_SIZE, (n_nodes, 2))
+        self.energies = np.full(n_nodes, config.E_INITIAL)
+        self.speeds = self.rng.uniform(config.MIN_SPEED, config.MAX_SPEED, n_nodes)
+        self.waypoints = self.rng.uniform(0, config.AREA_SIZE, (n_nodes, 2))
+        self.pause_timers = np.zeros(n_nodes)
         self.n_nodes = n_nodes
         self.sim_time = sim_time
         self.rng = rng if rng is not None else np.random.default_rng(seed)
@@ -66,10 +78,12 @@ class ResilientMANETSimulationEngine:
             self.clusters[closest_c].append(i)
 
     def _build_feature_matrix(self) -> np.ndarray:
+        # If an external feature matrix was supplied (e.g., parsed from NS‑3 traces), use it directly.
+        if self.external_H is not None:
+            return self.external_H
         H = np.zeros((self.n_nodes, config.GATM_FEATURE_DIM))
         bayes_trust = self.bayes_engine.get_all_posterior_means()
         uncertainties = self.bayes_engine.get_all_uncertainties()
-
         for i in range(self.n_nodes):
             H[i, 0] = self.positions[i, 0] / config.AREA_SIZE
             H[i, 1] = self.positions[i, 1] / config.AREA_SIZE
