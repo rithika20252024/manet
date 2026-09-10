@@ -20,7 +20,7 @@ TX_RANGE            = 250.0         # 250 metres transmission range
 MIN_SPEED           = 1.0           # 1 m/s
 MAX_SPEED           = 10.0          # 10 m/s
 PAUSE_TIME          = 5.0           # 5 seconds pause time
-N_RUNS              = 10            # 10 Monte Carlo runs
+N_RUNS              = 40            # 40 Monte Carlo runs
 SEED                = 42            # Master reproducible seed
 
 # --- Adversary & Multi-Attack Model ---
