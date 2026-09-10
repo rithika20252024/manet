@@ -1,290 +1,1374 @@
-[01:35:08] [INFO ] ============================================================
-[01:35:08] [INFO ]   RESILIENT-MANET Simulation Starting
-[01:35:08] [INFO ]   Nodes=100 | Time=40.0s | Runs=10 | Seed=42
-[01:35:08] [INFO ] ============================================================
-[01:35:08] [INFO ] 
-────────────────────────────────────────
-[01:35:08] [INFO ] Run 1/10 (seed=892)
-[01:35:08] [INFO ] ────────────────────────────────────────
-[01:35:08] [INFO ] [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]   0.0%  (0.0/10.0)
-
+[23:22:16] [INFO ] ============================================================
+[23:22:16] [INFO ]   RESILIENT-MANET Simulation Starting
+[23:22:16] [INFO ]   Nodes=100 | Time=40.0s | Runs=40 | Seed=42
+[23:22:16] [INFO ] ============================================================
+[23:22:16] [INFO ] 
+[23:22:16] [INFO ] ────────────────────────────────────────
+[23:22:16] [INFO ] Run 1/40 (seed=2684470948)
+[23:22:16] [INFO ] ────────────────────────────────────────
+[23:22:16] [INFO ] [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]   0.0%  (0.0/40.0)
+[23:22:16] [INFO ] 
 ─── Initialising RESILIENT-MANET ───
   Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
-    Avg Prior Trust: 0.500 | Malicious Nodes: 10 | Threshold: 0.500
+    Avg RT: 0.778 | Flagged: 8 | Threshold: 0.480
   Step 2: Distributed Cluster Head Selection (FTL Groups)...
-    Clusters: 10 | CHs: [np.int64(0), np.int64(11), np.int64(22), np.int64(33), np.int64(44), np.int64(55), np.int64(66), np.int64(77), np.int64(88), np.int64(99)]
-  Step 3: Initializing GATM Generator & Discriminator Sparring (dim=53249)...
-  Step 4: Federated Differential Privacy Parameter Tuning (epsilon=0.1, delta=1e-05)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
 
-[FTL-GATM] dim=53249, pop=30, iter=50
-  HLOA iter  10/50 | Best fitness: 0.753649
-  HLOA iter  20/50 | Best fitness: 0.767165
-  HLOA iter  30/50 | Best fitness: 0.778085
-  HLOA iter  40/50 | Best fitness: 0.792999
-  HLOA iter  50/50 | Best fitness: 0.803957
-[FTL-GATM] Best fitness: 0.803957
-  t= 10.0s | PDR=0.990 | TP=1311.7 kbps | EC=126.2mJ | DR=100.0% | Thresh=0.500
-  t= 30.0s | PDR=0.990 | TP=1306.6 kbps | EC=118.3mJ | DR=100.0% | Thresh=0.500
-  t= 40.0s | PDR=0.984 | TP=1306.1 kbps | EC=119.6mJ | DR=90.0% | Thresh=0.500
-[01:35:08] [INFO ]   Initialisation complete in 0.003s
-[01:35:08] [INFO ]   Simulation run complete in 0.163s
-[01:35:08] [INFO ] 
-────────────────────────────────────────
-[01:35:08] [INFO ] Run 2/10 (seed=7739)
-[01:35:08] [INFO ] ────────────────────────────────────────
-[01:35:08] [INFO ] [████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]  10.0%  (1.0/10.0)
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.992948
+  HLOA iter  20/50 | Best fitness: 0.994348
+  HLOA iter  30/50 | Best fitness: 0.994348
+  HLOA iter  40/50 | Best fitness: 0.994348
+  HLOA iter  50/50 | Best fitness: 0.994348
+[HLOA] Best fitness: 0.994348
 
+[23:22:16] [INFO ]   Initialisation complete in 3.628s
+  t= 10.0s | PDR=0.558 | TP=342.8 kbps | EC=4548.0mJ | DR=75.0% | Thresh=0.503
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 50.0%
+  t= 30.0s | PDR=0.778 | TP=478.0 kbps | EC=8548.0mJ | DR=85.0% | Thresh=0.503
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 66.7%
+  t= 40.0s | PDR=0.688 | TP=422.7 kbps | EC=10548.0mJ | DR=90.0% | Thresh=0.503
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 100.0%
+[23:22:17] [INFO ]   Simulation run complete in 9.648s
+[23:22:17] [INFO ] 
+[23:22:17] [INFO ] ────────────────────────────────────────
+[23:22:17] [INFO ] Run 2/40 (seed=4091952314)
+[23:22:17] [INFO ] ────────────────────────────────────────
+[23:22:17] [INFO ] [█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]   2.5%  (1.0/40.0)
+[23:22:17] [INFO ] 
 ─── Initialising RESILIENT-MANET ───
   Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
-    Avg Prior Trust: 0.500 | Malicious Nodes: 10 | Threshold: 0.500
+    Avg RT: 0.764 | Flagged: 9 | Threshold: 0.480
   Step 2: Distributed Cluster Head Selection (FTL Groups)...
-    Clusters: 10 | CHs: [np.int64(0), np.int64(11), np.int64(22), np.int64(33), np.int64(44), np.int64(55), np.int64(66), np.int64(77), np.int64(88), np.int64(99)]
-  Step 3: Initializing GATM Generator & Discriminator Sparring (dim=53249)...
-  Step 4: Federated Differential Privacy Parameter Tuning (epsilon=0.1, delta=1e-05)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
 
-[FTL-GATM] dim=53249, pop=30, iter=50
-  HLOA iter  10/50 | Best fitness: 0.770894
-  HLOA iter  20/50 | Best fitness: 0.785300
-  HLOA iter  30/50 | Best fitness: 0.793990
-  HLOA iter  40/50 | Best fitness: 0.805944
-  HLOA iter  50/50 | Best fitness: 0.811447
-[FTL-GATM] Best fitness: 0.811447
-  t= 10.0s | PDR=0.987 | TP=1305.9 kbps | EC=118.6mJ | DR=100.0% | Thresh=0.500
-  t= 30.0s | PDR=0.990 | TP=1304.9 kbps | EC=119.0mJ | DR=100.0% | Thresh=0.500
-  t= 40.0s | PDR=0.987 | TP=1305.4 kbps | EC=119.8mJ | DR=100.0% | Thresh=0.500
-[01:35:09] [INFO ]   Initialisation complete in 0.003s
-[01:35:09] [INFO ]   Simulation run complete in 0.161s
-[01:35:09] [INFO ] 
-────────────────────────────────────────
-[01:35:09] [INFO ] Run 3/10 (seed=6545)
-[01:35:09] [INFO ] ────────────────────────────────────────
-[01:35:09] [INFO ] [████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]  20.0%  (2.0/10.0)
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.994314
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
 
+[23:22:17] [INFO ]   Initialisation complete in 3.794s
+  t= 10.0s | PDR=0.724 | TP=444.8 kbps | EC=4414.0mJ | DR=85.0% | Thresh=0.505
+           blackhole: 75.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 50.0%
+  t= 30.0s | PDR=0.544 | TP=334.2 kbps | EC=8414.0mJ | DR=95.0% | Thresh=0.505
+           blackhole: 75.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 66.7%
+  t= 40.0s | PDR=0.854 | TP=524.7 kbps | EC=10414.0mJ | DR=100.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 100.0%
+[23:22:17] [INFO ]   Simulation run complete in 7.014s
+[23:22:17] [INFO ] 
+[23:22:17] [INFO ] ────────────────────────────────────────
+[23:22:17] [INFO ] Run 3/40 (seed=233227757)
+[23:22:17] [INFO ] ────────────────────────────────────────
+[23:22:17] [INFO ] [██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]   5.0%  (2.0/40.0)
+[23:22:17] [INFO ] 
 ─── Initialising RESILIENT-MANET ───
   Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
-    Avg Prior Trust: 0.500 | Malicious Nodes: 10 | Threshold: 0.500
+    Avg RT: 0.767 | Flagged: 7 | Threshold: 0.480
   Step 2: Distributed Cluster Head Selection (FTL Groups)...
-    Clusters: 10 | CHs: [np.int64(0), np.int64(11), np.int64(22), np.int64(33), np.int64(44), np.int64(55), np.int64(66), np.int64(77), np.int64(88), np.int64(99)]
-  Step 3: Initializing GATM Generator & Discriminator Sparring (dim=53249)...
-  Step 4: Federated Differential Privacy Parameter Tuning (epsilon=0.1, delta=1e-05)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
 
-[FTL-GATM] dim=53249, pop=30, iter=50
-  HLOA iter  10/50 | Best fitness: 0.776911
-  HLOA iter  20/50 | Best fitness: 0.782081
-  HLOA iter  30/50 | Best fitness: 0.791508
-  HLOA iter  40/50 | Best fitness: 0.801484
-  HLOA iter  50/50 | Best fitness: 0.810328
-[FTL-GATM] Best fitness: 0.810328
-  t= 10.0s | PDR=0.989 | TP=1308.5 kbps | EC=122.3mJ | DR=100.0% | Thresh=0.500
-  t= 30.0s | PDR=0.990 | TP=1307.0 kbps | EC=120.4mJ | DR=100.0% | Thresh=0.500
-  t= 40.0s | PDR=0.988 | TP=1308.1 kbps | EC=117.3mJ | DR=100.0% | Thresh=0.500
-[01:35:09] [INFO ]   Initialisation complete in 0.002s
-[01:35:09] [INFO ]   Simulation run complete in 0.162s
-[01:35:09] [INFO ] 
-────────────────────────────────────────
-[01:35:09] [INFO ] Run 4/10 (seed=4388)
-[01:35:09] [INFO ] ────────────────────────────────────────
-[01:35:09] [INFO ] [████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░]  30.0%  (3.0/10.0)
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.992257
+  HLOA iter  20/50 | Best fitness: 0.993657
+  HLOA iter  30/50 | Best fitness: 0.993657
+  HLOA iter  40/50 | Best fitness: 0.993657
+  HLOA iter  50/50 | Best fitness: 0.993657
+[HLOA] Best fitness: 0.993657
 
+[23:22:17] [INFO ]   Initialisation complete in 3.637s
+  t= 10.0s | PDR=0.567 | TP=348.4 kbps | EC=4657.0mJ | DR=85.0% | Thresh=0.504
+           blackhole: 75.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 0.0%
+  t= 30.0s | PDR=0.787 | TP=483.5 kbps | EC=8657.0mJ | DR=95.0% | Thresh=0.504
+           blackhole: 75.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+  t= 40.0s | PDR=0.697 | TP=428.2 kbps | EC=10657.0mJ | DR=100.0% | Thresh=0.504
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+[23:22:17] [INFO ]   Simulation run complete in 10.457s
+[23:22:17] [INFO ] 
+[23:22:17] [INFO ] ────────────────────────────────────────
+[23:22:17] [INFO ] Run 4/40 (seed=3276785861)
+[23:22:17] [INFO ] ────────────────────────────────────────
+[23:22:17] [INFO ] [███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]   7.5%  (3.0/40.0)
+[23:22:17] [INFO ] 
 ─── Initialising RESILIENT-MANET ───
   Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
-    Avg Prior Trust: 0.500 | Malicious Nodes: 10 | Threshold: 0.500
+    Avg RT: 0.791 | Flagged: 6 | Threshold: 0.480
   Step 2: Distributed Cluster Head Selection (FTL Groups)...
-    Clusters: 10 | CHs: [np.int64(0), np.int64(11), np.int64(22), np.int64(33), np.int64(44), np.int64(55), np.int64(66), np.int64(77), np.int64(88), np.int64(99)]
-  Step 3: Initializing GATM Generator & Discriminator Sparring (dim=53249)...
-  Step 4: Federated Differential Privacy Parameter Tuning (epsilon=0.1, delta=1e-05)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
 
-[FTL-GATM] dim=53249, pop=30, iter=50
-  HLOA iter  10/50 | Best fitness: 0.789556
-  HLOA iter  20/50 | Best fitness: 0.803310
-  HLOA iter  30/50 | Best fitness: 0.808595
-  HLOA iter  40/50 | Best fitness: 0.822478
-  HLOA iter  50/50 | Best fitness: 0.832521
-[FTL-GATM] Best fitness: 0.832521
-  t= 10.0s | PDR=0.990 | TP=1305.8 kbps | EC=126.4mJ | DR=100.0% | Thresh=0.500
-  t= 30.0s | PDR=0.990 | TP=1307.1 kbps | EC=119.9mJ | DR=100.0% | Thresh=0.500
-  t= 40.0s | PDR=0.990 | TP=1305.2 kbps | EC=120.5mJ | DR=100.0% | Thresh=0.500
-[01:35:09] [INFO ]   Initialisation complete in 0.002s
-[01:35:09] [INFO ]   Simulation run complete in 0.162s
-[01:35:09] [INFO ] 
-────────────────────────────────────────
-[01:35:09] [INFO ] Run 5/10 (seed=4330)
-[01:35:09] [INFO ] ────────────────────────────────────────
-[01:35:09] [INFO ] [████████████████░░░░░░░░░░░░░░░░░░░░░░░░]  40.0%  (4.0/10.0)
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.992861
+  HLOA iter  20/50 | Best fitness: 0.994261
+  HLOA iter  30/50 | Best fitness: 0.994261
+  HLOA iter  40/50 | Best fitness: 0.994261
+  HLOA iter  50/50 | Best fitness: 0.994261
+[HLOA] Best fitness: 0.994261
 
+[23:22:17] [INFO ]   Initialisation complete in 3.741s
+  t= 10.0s | PDR=0.671 | TP=412.3 kbps | EC=4561.0mJ | DR=85.0% | Thresh=0.504
+           blackhole: 75.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 0.0%
+  t= 30.0s | PDR=0.891 | TP=547.4 kbps | EC=8561.0mJ | DR=95.0% | Thresh=0.504
+           blackhole: 75.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+  t= 40.0s | PDR=0.801 | TP=492.1 kbps | EC=10561.0mJ | DR=100.0% | Thresh=0.504
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+[23:22:17] [INFO ]   Simulation run complete in 8.561s
+[23:22:17] [INFO ] 
+[23:22:17] [INFO ] ────────────────────────────────────────
+[23:22:17] [INFO ] Run 5/40 (seed=3644269654)
+[23:22:17] [INFO ] ────────────────────────────────────────
+[23:22:17] [INFO ] [████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]  10.0%  (4.0/40.0)
+[23:22:17] [INFO ] 
 ─── Initialising RESILIENT-MANET ───
   Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
-    Avg Prior Trust: 0.500 | Malicious Nodes: 10 | Threshold: 0.500
+    Avg RT: 0.784 | Flagged: 9 | Threshold: 0.480
   Step 2: Distributed Cluster Head Selection (FTL Groups)...
-    Clusters: 10 | CHs: [np.int64(0), np.int64(11), np.int64(22), np.int64(33), np.int64(44), np.int64(55), np.int64(66), np.int64(77), np.int64(88), np.int64(99)]
-  Step 3: Initializing GATM Generator & Discriminator Sparring (dim=53249)...
-  Step 4: Federated Differential Privacy Parameter Tuning (epsilon=0.1, delta=1e-05)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
 
-[FTL-GATM] dim=53249, pop=30, iter=50
-  HLOA iter  10/50 | Best fitness: 0.802771
-  HLOA iter  20/50 | Best fitness: 0.809438
-  HLOA iter  30/50 | Best fitness: 0.823254
-  HLOA iter  40/50 | Best fitness: 0.836950
-  HLOA iter  50/50 | Best fitness: 0.849261
-[FTL-GATM] Best fitness: 0.849261
-  t= 10.0s | PDR=0.990 | TP=1308.4 kbps | EC=119.9mJ | DR=100.0% | Thresh=0.500
-  t= 30.0s | PDR=0.990 | TP=1308.7 kbps | EC=124.7mJ | DR=100.0% | Thresh=0.500
-  t= 40.0s | PDR=0.978 | TP=1298.5 kbps | EC=122.7mJ | DR=80.0% | Thresh=0.500
-[01:35:09] [INFO ]   Initialisation complete in 0.003s
-[01:35:09] [INFO ]   Simulation run complete in 0.162s
-[01:35:09] [INFO ] 
-────────────────────────────────────────
-[01:35:09] [INFO ] Run 6/10 (seed=8585)
-[01:35:09] [INFO ] ────────────────────────────────────────
-[01:35:09] [INFO ] [████████████████████░░░░░░░░░░░░░░░░░░░░]  50.0%  (5.0/10.0)
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.994154
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
 
+[23:22:17] [INFO ]   Initialisation complete in 3.534s
+  t= 10.0s | PDR=0.864 | TP=530.8 kbps | EC=4554.0mJ | DR=75.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 50.0%
+  t= 30.0s | PDR=0.684 | TP=420.2 kbps | EC=8554.0mJ | DR=85.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 66.7%
+  t= 40.0s | PDR=0.594 | TP=365.0 kbps | EC=10554.0mJ | DR=90.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 100.0%
+[23:22:17] [INFO ]   Simulation run complete in 8.354s
+[23:22:17] [INFO ] 
+[23:22:17] [INFO ] ────────────────────────────────────────
+[23:22:17] [INFO ] Run 6/40 (seed=1206282609)
+[23:22:17] [INFO ] ────────────────────────────────────────
+[23:22:17] [INFO ] [█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]  12.5%  (5.0/40.0)
+[23:22:17] [INFO ] 
 ─── Initialising RESILIENT-MANET ───
   Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
-    Avg Prior Trust: 0.500 | Malicious Nodes: 10 | Threshold: 0.500
+    Avg RT: 0.759 | Flagged: 9 | Threshold: 0.480
   Step 2: Distributed Cluster Head Selection (FTL Groups)...
-    Clusters: 10 | CHs: [np.int64(0), np.int64(11), np.int64(22), np.int64(33), np.int64(44), np.int64(55), np.int64(66), np.int64(77), np.int64(88), np.int64(99)]
-  Step 3: Initializing GATM Generator & Discriminator Sparring (dim=53249)...
-  Step 4: Federated Differential Privacy Parameter Tuning (epsilon=0.1, delta=1e-05)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
 
-[FTL-GATM] dim=53249, pop=30, iter=50
-  HLOA iter  10/50 | Best fitness: 0.813445
-  HLOA iter  20/50 | Best fitness: 0.821010
-  HLOA iter  30/50 | Best fitness: 0.832476
-  HLOA iter  40/50 | Best fitness: 0.840484
-  HLOA iter  50/50 | Best fitness: 0.847593
-[FTL-GATM] Best fitness: 0.847593
-  t= 10.0s | PDR=0.987 | TP=1311.8 kbps | EC=117.7mJ | DR=100.0% | Thresh=0.500
-  t= 30.0s | PDR=0.990 | TP=1310.6 kbps | EC=120.5mJ | DR=100.0% | Thresh=0.500
-  t= 40.0s | PDR=0.990 | TP=1312.4 kbps | EC=119.6mJ | DR=100.0% | Thresh=0.500
-[01:35:09] [INFO ]   Initialisation complete in 0.002s
-[01:35:09] [INFO ]   Simulation run complete in 0.162s
-[01:35:09] [INFO ] 
-────────────────────────────────────────
-[01:35:09] [INFO ] Run 7/10 (seed=859)
-[01:35:09] [INFO ] ────────────────────────────────────────
-[01:35:09] [INFO ] [████████████████████████░░░░░░░░░░░░░░░░]  60.0%  (6.0/10.0)
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.992109
+  HLOA iter  20/50 | Best fitness: 0.993509
+  HLOA iter  30/50 | Best fitness: 0.993509
+  HLOA iter  40/50 | Best fitness: 0.993509
+  HLOA iter  50/50 | Best fitness: 0.993509
+[HLOA] Best fitness: 0.993509
 
+[23:22:17] [INFO ]   Initialisation complete in 3.689s
+  t= 10.0s | PDR=0.619 | TP=380.3 kbps | EC=4409.0mJ | DR=65.0% | Thresh=0.504
+           blackhole: 66.7% | collusion: 75.0% | grayhole: 100.0% | on_off: 0.0%
+  t= 30.0s | PDR=0.839 | TP=515.5 kbps | EC=8409.0mJ | DR=75.0% | Thresh=0.504
+           blackhole: 66.7% | collusion: 75.0% | grayhole: 100.0% | on_off: 66.7%
+  t= 40.0s | PDR=0.749 | TP=460.2 kbps | EC=10409.0mJ | DR=80.0% | Thresh=0.504
+           blackhole: 100.0% | collusion: 75.0% | grayhole: 100.0% | on_off: 66.7%
+[23:22:17] [INFO ]   Simulation run complete in 9.309s
+[23:22:17] [INFO ] 
+[23:22:17] [INFO ] ────────────────────────────────────────
+[23:22:17] [INFO ] Run 7/40 (seed=3543069911)
+[23:22:17] [INFO ] ────────────────────────────────────────
+[23:22:17] [INFO ] [██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]  15.0%  (6.0/40.0)
+[23:22:17] [INFO ] 
 ─── Initialising RESILIENT-MANET ───
   Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
-    Avg Prior Trust: 0.500 | Malicious Nodes: 10 | Threshold: 0.500
+    Avg RT: 0.761 | Flagged: 6 | Threshold: 0.480
   Step 2: Distributed Cluster Head Selection (FTL Groups)...
-    Clusters: 10 | CHs: [np.int64(0), np.int64(11), np.int64(22), np.int64(33), np.int64(44), np.int64(55), np.int64(66), np.int64(77), np.int64(88), np.int64(99)]
-  Step 3: Initializing GATM Generator & Discriminator Sparring (dim=53249)...
-  Step 4: Federated Differential Privacy Parameter Tuning (epsilon=0.1, delta=1e-05)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
 
-[FTL-GATM] dim=53249, pop=30, iter=50
-  HLOA iter  10/50 | Best fitness: 0.828817
-  HLOA iter  20/50 | Best fitness: 0.837939
-  HLOA iter  30/50 | Best fitness: 0.850431
-  HLOA iter  40/50 | Best fitness: 0.857053
-  HLOA iter  50/50 | Best fitness: 0.864294
-[FTL-GATM] Best fitness: 0.864294
-  t= 10.0s | PDR=0.990 | TP=1304.5 kbps | EC=117.6mJ | DR=100.0% | Thresh=0.500
-  t= 30.0s | PDR=0.990 | TP=1305.6 kbps | EC=123.0mJ | DR=100.0% | Thresh=0.500
-  t= 40.0s | PDR=0.986 | TP=1301.1 kbps | EC=122.9mJ | DR=90.0% | Thresh=0.500
-[01:35:09] [INFO ]   Initialisation complete in 0.002s
-[01:35:09] [INFO ]   Simulation run complete in 0.161s
-[01:35:09] [INFO ] 
-────────────────────────────────────────
-[01:35:09] [INFO ] Run 8/10 (seed=6973)
-[01:35:09] [INFO ] ────────────────────────────────────────
-[01:35:09] [INFO ] [████████████████████████████░░░░░░░░░░░░]  70.0%  (7.0/10.0)
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.994411
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
 
+[23:22:17] [INFO ]   Initialisation complete in 3.791s
+  t= 10.0s | PDR=0.721 | TP=443.0 kbps | EC=4411.0mJ | DR=85.0% | Thresh=0.506
+           blackhole: 75.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 0.0%
+  t= 30.0s | PDR=0.541 | TP=332.4 kbps | EC=8411.0mJ | DR=95.0% | Thresh=0.506
+           blackhole: 75.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+  t= 40.0s | PDR=0.851 | TP=522.9 kbps | EC=10411.0mJ | DR=100.0% | Thresh=0.506
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+[23:22:17] [INFO ]   Simulation run complete in 8.611s
+[23:22:17] [INFO ] 
+[23:22:17] [INFO ] ────────────────────────────────────────
+[23:22:17] [INFO ] Run 8/40 (seed=3479688010)
+[23:22:17] [INFO ] ────────────────────────────────────────
+[23:22:17] [INFO ] [███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]  17.5%  (7.0/40.0)
+[23:22:17] [INFO ] 
 ─── Initialising RESILIENT-MANET ───
   Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
-    Avg Prior Trust: 0.500 | Malicious Nodes: 10 | Threshold: 0.500
+    Avg RT: 0.760 | Flagged: 5 | Threshold: 0.480
   Step 2: Distributed Cluster Head Selection (FTL Groups)...
-    Clusters: 10 | CHs: [np.int64(0), np.int64(11), np.int64(22), np.int64(33), np.int64(44), np.int64(55), np.int64(66), np.int64(77), np.int64(88), np.int64(99)]
-  Step 3: Initializing GATM Generator & Discriminator Sparring (dim=53249)...
-  Step 4: Federated Differential Privacy Parameter Tuning (epsilon=0.1, delta=1e-05)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
 
-[FTL-GATM] dim=53249, pop=30, iter=50
-  HLOA iter  10/50 | Best fitness: 0.842088
-  HLOA iter  20/50 | Best fitness: 0.850379
-  HLOA iter  30/50 | Best fitness: 0.864104
-  HLOA iter  40/50 | Best fitness: 0.865000
-  HLOA iter  50/50 | Best fitness: 0.865000
-[FTL-GATM] Best fitness: 0.865000
-  t= 10.0s | PDR=0.987 | TP=1304.8 kbps | EC=122.8mJ | DR=100.0% | Thresh=0.500
-  t= 30.0s | PDR=0.988 | TP=1307.3 kbps | EC=119.1mJ | DR=100.0% | Thresh=0.500
-  t= 40.0s | PDR=0.990 | TP=1307.2 kbps | EC=120.1mJ | DR=100.0% | Thresh=0.500
-[01:35:10] [INFO ]   Initialisation complete in 0.002s
-[01:35:10] [INFO ]   Simulation run complete in 0.161s
-[01:35:10] [INFO ] 
-────────────────────────────────────────
-[01:35:10] [INFO ] Run 9/10 (seed=2014)
-[01:35:10] [INFO ] ────────────────────────────────────────
-[01:35:10] [INFO ] [████████████████████████████████░░░░░░░░]  80.0%  (8.0/10.0)
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.992510
+  HLOA iter  20/50 | Best fitness: 0.993910
+  HLOA iter  30/50 | Best fitness: 0.993910
+  HLOA iter  40/50 | Best fitness: 0.993910
+  HLOA iter  50/50 | Best fitness: 0.993910
+[HLOA] Best fitness: 0.993910
 
+[23:22:17] [INFO ]   Initialisation complete in 3.490s
+  t= 10.0s | PDR=0.820 | TP=503.8 kbps | EC=4410.0mJ | DR=75.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 50.0%
+  t= 30.0s | PDR=0.640 | TP=393.2 kbps | EC=8410.0mJ | DR=85.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 66.7%
+  t= 40.0s | PDR=0.550 | TP=337.9 kbps | EC=10410.0mJ | DR=90.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 100.0%
+[23:22:18] [INFO ]   Simulation run complete in 6.710s
+[23:22:18] [INFO ] 
+[23:22:18] [INFO ] ────────────────────────────────────────
+[23:22:18] [INFO ] Run 9/40 (seed=877132087)
+[23:22:18] [INFO ] ────────────────────────────────────────
+[23:22:18] [INFO ] [████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]  20.0%  (8.0/40.0)
+[23:22:18] [INFO ] 
 ─── Initialising RESILIENT-MANET ───
   Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
-    Avg Prior Trust: 0.500 | Malicious Nodes: 10 | Threshold: 0.500
+    Avg RT: 0.757 | Flagged: 7 | Threshold: 0.480
   Step 2: Distributed Cluster Head Selection (FTL Groups)...
-    Clusters: 10 | CHs: [np.int64(0), np.int64(11), np.int64(22), np.int64(33), np.int64(44), np.int64(55), np.int64(66), np.int64(77), np.int64(88), np.int64(99)]
-  Step 3: Initializing GATM Generator & Discriminator Sparring (dim=53249)...
-  Step 4: Federated Differential Privacy Parameter Tuning (epsilon=0.1, delta=1e-05)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
 
-[FTL-GATM] dim=53249, pop=30, iter=50
-  HLOA iter  10/50 | Best fitness: 0.850091
-  HLOA iter  20/50 | Best fitness: 0.855577
-  HLOA iter  30/50 | Best fitness: 0.865000
-  HLOA iter  40/50 | Best fitness: 0.865000
-  HLOA iter  50/50 | Best fitness: 0.865000
-[FTL-GATM] Best fitness: 0.865000
-  t= 10.0s | PDR=0.990 | TP=1306.5 kbps | EC=118.3mJ | DR=100.0% | Thresh=0.500
-  t= 30.0s | PDR=0.989 | TP=1309.2 kbps | EC=120.8mJ | DR=100.0% | Thresh=0.500
-  t= 40.0s | PDR=0.990 | TP=1311.7 kbps | EC=120.6mJ | DR=100.0% | Thresh=0.500
-[01:35:10] [INFO ]   Initialisation complete in 0.002s
-[01:35:10] [INFO ]   Simulation run complete in 0.162s
-[01:35:10] [INFO ] 
-────────────────────────────────────────
-[01:35:10] [INFO ] Run 10/10 (seed=941)
-[01:35:10] [INFO ] ────────────────────────────────────────
-[01:35:10] [INFO ] [████████████████████████████████████░░░░]  90.0%  (9.0/10.0)
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.994087
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
 
+[23:22:18] [INFO ]   Initialisation complete in 3.567s
+  t= 10.0s | PDR=0.897 | TP=551.1 kbps | EC=4587.0mJ | DR=75.0% | Thresh=0.506
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 0.0%
+  t= 30.0s | PDR=0.717 | TP=440.5 kbps | EC=8587.0mJ | DR=85.0% | Thresh=0.506
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+  t= 40.0s | PDR=0.627 | TP=385.2 kbps | EC=10587.0mJ | DR=90.0% | Thresh=0.506
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+[23:22:18] [INFO ]   Simulation run complete in 6.787s
+[23:22:18] [INFO ] 
+[23:22:18] [INFO ] ────────────────────────────────────────
+[23:22:18] [INFO ] Run 10/40 (seed=1244265337)
+[23:22:18] [INFO ] ────────────────────────────────────────
+[23:22:18] [INFO ] [█████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]  22.5%  (9.0/40.0)
+[23:22:18] [INFO ] 
 ─── Initialising RESILIENT-MANET ───
   Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
-    Avg Prior Trust: 0.500 | Malicious Nodes: 10 | Threshold: 0.500
+    Avg RT: 0.787 | Flagged: 7 | Threshold: 0.480
   Step 2: Distributed Cluster Head Selection (FTL Groups)...
-    Clusters: 10 | CHs: [np.int64(0), np.int64(11), np.int64(22), np.int64(33), np.int64(44), np.int64(55), np.int64(66), np.int64(77), np.int64(88), np.int64(99)]
-  Step 3: Initializing GATM Generator & Discriminator Sparring (dim=53249)...
-  Step 4: Federated Differential Privacy Parameter Tuning (epsilon=0.1, delta=1e-05)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
 
-[FTL-GATM] dim=53249, pop=30, iter=50
-  HLOA iter  10/50 | Best fitness: 0.865000
-  HLOA iter  20/50 | Best fitness: 0.865000
-  HLOA iter  30/50 | Best fitness: 0.865000
-  HLOA iter  40/50 | Best fitness: 0.865000
-  HLOA iter  50/50 | Best fitness: 0.865000
-[FTL-GATM] Best fitness: 0.865000
-  t= 10.0s | PDR=0.990 | TP=1306.1 kbps | EC=125.0mJ | DR=100.0% | Thresh=0.500
-  t= 30.0s | PDR=0.987 | TP=1305.5 kbps | EC=120.0mJ | DR=100.0% | Thresh=0.500
-  t= 40.0s | PDR=0.988 | TP=1308.6 kbps | EC=119.1mJ | DR=100.0% | Thresh=0.500
-[01:35:10] [INFO ]   Initialisation complete in 0.002s
-[01:35:10] [INFO ]   Simulation run complete in 0.160s
-[01:35:10] [INFO ] 
-Aggregated 10 successful runs.
-[01:35:10] [INFO ] 
-Generating figures...
-[01:35:10] [INFO ] 
-============================================================
-[01:35:10] [INFO ]   RESILIENT-MANET Simulation Complete!
-[01:35:10] [INFO ]   Total time: 1.643s
-[01:35:10] [INFO ]   Results saved to: RESILIENT_MANET_STANDALONE/outputs/
-[01:35:10] [INFO ] ============================================================
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.992337
+  HLOA iter  20/50 | Best fitness: 0.993737
+  HLOA iter  30/50 | Best fitness: 0.993737
+  HLOA iter  40/50 | Best fitness: 0.993737
+  HLOA iter  50/50 | Best fitness: 0.993737
+[HLOA] Best fitness: 0.993737
+
+[23:22:18] [INFO ]   Initialisation complete in 3.617s
+  t= 10.0s | PDR=0.547 | TP=336.1 kbps | EC=4437.0mJ | DR=75.0% | Thresh=0.504
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 0.0%
+  t= 30.0s | PDR=0.767 | TP=471.2 kbps | EC=8437.0mJ | DR=85.0% | Thresh=0.504
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+  t= 40.0s | PDR=0.677 | TP=415.9 kbps | EC=10437.0mJ | DR=90.0% | Thresh=0.504
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+[23:22:18] [INFO ]   Simulation run complete in 8.037s
+[23:22:18] [INFO ] 
+[23:22:18] [INFO ] ────────────────────────────────────────
+[23:22:18] [INFO ] Run 11/40 (seed=474404832)
+[23:22:18] [INFO ] ────────────────────────────────────────
+[23:22:18] [INFO ] [██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]  25.0%  (10.0/40.0)
+[23:22:18] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.762 | Flagged: 7 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.994332
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
+
+[23:22:18] [INFO ]   Initialisation complete in 3.512s
+  t= 10.0s | PDR=0.842 | TP=517.3 kbps | EC=4532.0mJ | DR=65.0% | Thresh=0.503
+           blackhole: 66.7% | collusion: 100.0% | grayhole: 66.7% | on_off: 50.0%
+  t= 30.0s | PDR=0.662 | TP=406.7 kbps | EC=8532.0mJ | DR=75.0% | Thresh=0.503
+           blackhole: 66.7% | collusion: 100.0% | grayhole: 66.7% | on_off: 66.7%
+  t= 40.0s | PDR=0.572 | TP=351.4 kbps | EC=10532.0mJ | DR=80.0% | Thresh=0.503
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 100.0%
+[23:22:18] [INFO ]   Simulation run complete in 7.532s
+[23:22:18] [INFO ] 
+[23:22:18] [INFO ] ────────────────────────────────────────
+[23:22:18] [INFO ] Run 12/40 (seed=3346720311)
+[23:22:18] [INFO ] ────────────────────────────────────────
+[23:22:18] [INFO ] [███████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]  27.5%  (11.0/40.0)
+[23:22:18] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.801 | Flagged: 6 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.992311
+  HLOA iter  20/50 | Best fitness: 0.993711
+  HLOA iter  30/50 | Best fitness: 0.993711
+  HLOA iter  40/50 | Best fitness: 0.993711
+  HLOA iter  50/50 | Best fitness: 0.993711
+[HLOA] Best fitness: 0.993711
+
+[23:22:18] [INFO ]   Initialisation complete in 3.791s
+  t= 10.0s | PDR=0.721 | TP=443.0 kbps | EC=4511.0mJ | DR=65.0% | Thresh=0.506
+           blackhole: 66.7% | collusion: 75.0% | grayhole: 100.0% | on_off: 0.0%
+  t= 30.0s | PDR=0.541 | TP=332.4 kbps | EC=8511.0mJ | DR=75.0% | Thresh=0.506
+           blackhole: 66.7% | collusion: 75.0% | grayhole: 100.0% | on_off: 66.7%
+  t= 40.0s | PDR=0.851 | TP=522.9 kbps | EC=10511.0mJ | DR=80.0% | Thresh=0.506
+           blackhole: 100.0% | collusion: 75.0% | grayhole: 100.0% | on_off: 66.7%
+[23:22:18] [INFO ]   Simulation run complete in 7.011s
+[23:22:18] [INFO ] 
+[23:22:18] [INFO ] ────────────────────────────────────────
+[23:22:18] [INFO ] Run 13/40 (seed=2845906112)
+[23:22:18] [INFO ] ────────────────────────────────────────
+[23:22:18] [INFO ] [████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░]  30.0%  (12.0/40.0)
+[23:22:18] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.782 | Flagged: 7 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.993112
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
+
+[23:22:18] [INFO ]   Initialisation complete in 3.592s
+  t= 10.0s | PDR=0.522 | TP=320.7 kbps | EC=4612.0mJ | DR=85.0% | Thresh=0.503
+           blackhole: 75.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 50.0%
+  t= 30.0s | PDR=0.742 | TP=455.9 kbps | EC=8612.0mJ | DR=95.0% | Thresh=0.503
+           blackhole: 75.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 66.7%
+  t= 40.0s | PDR=0.652 | TP=400.6 kbps | EC=10612.0mJ | DR=100.0% | Thresh=0.503
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 100.0%
+[23:22:18] [INFO ]   Simulation run complete in 8.812s
+[23:22:18] [INFO ] 
+[23:22:18] [INFO ] ────────────────────────────────────────
+[23:22:18] [INFO ] Run 14/40 (seed=1941080700)
+[23:22:18] [INFO ] ────────────────────────────────────────
+[23:22:18] [INFO ] [█████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░]  32.5%  (13.0/40.0)
+[23:22:18] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.750 | Flagged: 5 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.992700
+  HLOA iter  20/50 | Best fitness: 0.994100
+  HLOA iter  30/50 | Best fitness: 0.994100
+  HLOA iter  40/50 | Best fitness: 0.994100
+  HLOA iter  50/50 | Best fitness: 0.994100
+[HLOA] Best fitness: 0.994100
+
+[23:22:18] [INFO ]   Initialisation complete in 3.780s
+  t= 10.0s | PDR=0.710 | TP=436.2 kbps | EC=4400.0mJ | DR=65.0% | Thresh=0.503
+           blackhole: 66.7% | collusion: 100.0% | grayhole: 66.7% | on_off: 50.0%
+  t= 30.0s | PDR=0.530 | TP=325.6 kbps | EC=8400.0mJ | DR=75.0% | Thresh=0.503
+           blackhole: 66.7% | collusion: 100.0% | grayhole: 66.7% | on_off: 66.7%
+  t= 40.0s | PDR=0.840 | TP=516.1 kbps | EC=10400.0mJ | DR=80.0% | Thresh=0.503
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 100.0%
+[23:22:18] [INFO ]   Simulation run complete in 7.400s
+[23:22:18] [INFO ] 
+[23:22:18] [INFO ] ────────────────────────────────────────
+[23:22:18] [INFO ] Run 15/40 (seed=1916484751)
+[23:22:18] [INFO ] ────────────────────────────────────────
+[23:22:18] [INFO ] [██████████████░░░░░░░░░░░░░░░░░░░░░░░░░░]  35.0%  (14.0/40.0)
+[23:22:18] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.781 | Flagged: 6 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.994251
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
+
+[23:22:18] [INFO ]   Initialisation complete in 3.831s
+  t= 10.0s | PDR=0.761 | TP=467.6 kbps | EC=4551.0mJ | DR=75.0% | Thresh=0.506
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 0.0%
+  t= 30.0s | PDR=0.581 | TP=357.0 kbps | EC=8551.0mJ | DR=85.0% | Thresh=0.506
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+  t= 40.0s | PDR=0.891 | TP=547.4 kbps | EC=10551.0mJ | DR=90.0% | Thresh=0.506
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+[23:22:19] [INFO ]   Simulation run complete in 7.451s
+[23:22:19] [INFO ] 
+[23:22:19] [INFO ] ────────────────────────────────────────
+[23:22:19] [INFO ] Run 16/40 (seed=3701790193)
+[23:22:19] [INFO ] ────────────────────────────────────────
+[23:22:19] [INFO ] [███████████████░░░░░░░░░░░░░░░░░░░░░░░░░]  37.5%  (15.0/40.0)
+[23:22:19] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.763 | Flagged: 8 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.992193
+  HLOA iter  20/50 | Best fitness: 0.993593
+  HLOA iter  30/50 | Best fitness: 0.993593
+  HLOA iter  40/50 | Best fitness: 0.993593
+  HLOA iter  50/50 | Best fitness: 0.993593
+[HLOA] Best fitness: 0.993593
+
+[23:22:19] [INFO ]   Initialisation complete in 3.673s
+  t= 10.0s | PDR=0.603 | TP=370.5 kbps | EC=4593.0mJ | DR=75.0% | Thresh=0.504
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 0.0%
+  t= 30.0s | PDR=0.823 | TP=505.7 kbps | EC=8593.0mJ | DR=85.0% | Thresh=0.504
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+  t= 40.0s | PDR=0.733 | TP=450.4 kbps | EC=10593.0mJ | DR=90.0% | Thresh=0.504
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+[23:22:19] [INFO ]   Simulation run complete in 8.893s
+[23:22:19] [INFO ] 
+[23:22:19] [INFO ] ────────────────────────────────────────
+[23:22:19] [INFO ] Run 17/40 (seed=3025436074)
+[23:22:19] [INFO ] ────────────────────────────────────────
+[23:22:19] [INFO ] [████████████████░░░░░░░░░░░░░░░░░░░░░░░░]  40.0%  (16.0/40.0)
+[23:22:19] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.784 | Flagged: 9 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.993074
+  HLOA iter  20/50 | Best fitness: 0.994474
+  HLOA iter  30/50 | Best fitness: 0.994474
+  HLOA iter  40/50 | Best fitness: 0.994474
+  HLOA iter  50/50 | Best fitness: 0.994474
+[HLOA] Best fitness: 0.994474
+
+[23:22:19] [INFO ]   Initialisation complete in 3.554s
+  t= 10.0s | PDR=0.884 | TP=543.1 kbps | EC=4674.0mJ | DR=75.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 50.0%
+  t= 30.0s | PDR=0.704 | TP=432.5 kbps | EC=8674.0mJ | DR=85.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 66.7%
+  t= 40.0s | PDR=0.614 | TP=377.2 kbps | EC=10674.0mJ | DR=90.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 100.0%
+[23:22:19] [INFO ]   Simulation run complete in 6.774s
+[23:22:19] [INFO ] 
+[23:22:19] [INFO ] ────────────────────────────────────────
+[23:22:19] [INFO ] Run 18/40 (seed=945158113)
+[23:22:19] [INFO ] ────────────────────────────────────────
+[23:22:19] [INFO ] [█████████████████░░░░░░░░░░░░░░░░░░░░░░░]  42.5%  (17.0/40.0)
+[23:22:19] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.763 | Flagged: 8 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.992613
+  HLOA iter  20/50 | Best fitness: 0.994013
+  HLOA iter  30/50 | Best fitness: 0.994013
+  HLOA iter  40/50 | Best fitness: 0.994013
+  HLOA iter  50/50 | Best fitness: 0.994013
+[HLOA] Best fitness: 0.994013
+
+[23:22:19] [INFO ]   Initialisation complete in 3.593s
+  t= 10.0s | PDR=0.523 | TP=321.3 kbps | EC=4413.0mJ | DR=75.0% | Thresh=0.504
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 0.0%
+  t= 30.0s | PDR=0.743 | TP=456.5 kbps | EC=8413.0mJ | DR=85.0% | Thresh=0.504
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+  t= 40.0s | PDR=0.653 | TP=401.2 kbps | EC=10413.0mJ | DR=90.0% | Thresh=0.504
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+[23:22:19] [INFO ]   Simulation run complete in 8.813s
+[23:22:19] [INFO ] 
+[23:22:19] [INFO ] ────────────────────────────────────────
+[23:22:19] [INFO ] Run 19/40 (seed=495070894)
+[23:22:19] [INFO ] ────────────────────────────────────────
+[23:22:19] [INFO ] [██████████████████░░░░░░░░░░░░░░░░░░░░░░]  45.0%  (18.0/40.0)
+[23:22:19] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.784 | Flagged: 9 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.992894
+  HLOA iter  20/50 | Best fitness: 0.994294
+  HLOA iter  30/50 | Best fitness: 0.994294
+  HLOA iter  40/50 | Best fitness: 0.994294
+  HLOA iter  50/50 | Best fitness: 0.994294
+[HLOA] Best fitness: 0.994294
+
+[23:22:19] [INFO ]   Initialisation complete in 3.574s
+  t= 10.0s | PDR=0.504 | TP=309.7 kbps | EC=4494.0mJ | DR=75.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 50.0%
+  t= 30.0s | PDR=0.724 | TP=444.8 kbps | EC=8494.0mJ | DR=85.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 66.7%
+  t= 40.0s | PDR=0.634 | TP=389.5 kbps | EC=10494.0mJ | DR=90.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 100.0%
+[23:22:19] [INFO ]   Simulation run complete in 9.594s
+[23:22:19] [INFO ] 
+[23:22:19] [INFO ] ────────────────────────────────────────
+[23:22:19] [INFO ] Run 20/40 (seed=2308562097)
+[23:22:19] [INFO ] ────────────────────────────────────────
+[23:22:19] [INFO ] [███████████████████░░░░░░░░░░░░░░░░░░░░░]  47.5%  (19.0/40.0)
+[23:22:19] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.807 | Flagged: 7 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.994097
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
+
+[23:22:19] [INFO ]   Initialisation complete in 3.577s
+  t= 10.0s | PDR=0.507 | TP=311.5 kbps | EC=4697.0mJ | DR=65.0% | Thresh=0.504
+           blackhole: 66.7% | collusion: 75.0% | grayhole: 100.0% | on_off: 0.0%
+  t= 30.0s | PDR=0.727 | TP=446.7 kbps | EC=8697.0mJ | DR=75.0% | Thresh=0.504
+           blackhole: 66.7% | collusion: 75.0% | grayhole: 100.0% | on_off: 66.7%
+  t= 40.0s | PDR=0.637 | TP=391.4 kbps | EC=10697.0mJ | DR=80.0% | Thresh=0.504
+           blackhole: 100.0% | collusion: 75.0% | grayhole: 100.0% | on_off: 66.7%
+[23:22:19] [INFO ]   Simulation run complete in 8.797s
+[23:22:19] [INFO ] 
+[23:22:19] [INFO ] ────────────────────────────────────────
+[23:22:19] [INFO ] Run 21/40 (seed=4192703856)
+[23:22:19] [INFO ] ────────────────────────────────────────
+[23:22:19] [INFO ] [████████████████████░░░░░░░░░░░░░░░░░░░░]  50.0%  (20.0/40.0)
+[23:22:19] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.786 | Flagged: 6 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.993356
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
+
+[23:22:19] [INFO ]   Initialisation complete in 3.736s
+  t= 10.0s | PDR=0.666 | TP=409.2 kbps | EC=4556.0mJ | DR=65.0% | Thresh=0.503
+           blackhole: 66.7% | collusion: 100.0% | grayhole: 66.7% | on_off: 50.0%
+  t= 30.0s | PDR=0.886 | TP=544.4 kbps | EC=8556.0mJ | DR=75.0% | Thresh=0.503
+           blackhole: 66.7% | collusion: 100.0% | grayhole: 66.7% | on_off: 66.7%
+  t= 40.0s | PDR=0.796 | TP=489.1 kbps | EC=10556.0mJ | DR=80.0% | Thresh=0.503
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 100.0%
+[23:22:19] [INFO ]   Simulation run complete in 10.556s
+[23:22:19] [INFO ] 
+[23:22:19] [INFO ] ────────────────────────────────────────
+[23:22:19] [INFO ] Run 22/40 (seed=3186457131)
+[23:22:19] [INFO ] ────────────────────────────────────────
+[23:22:19] [INFO ] [█████████████████████░░░░░░░░░░░░░░░░░░░]  52.5%  (21.0/40.0)
+[23:22:19] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.801 | Flagged: 6 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.994131
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
+
+[23:22:19] [INFO ]   Initialisation complete in 3.811s
+  t= 10.0s | PDR=0.741 | TP=455.3 kbps | EC=4631.0mJ | DR=65.0% | Thresh=0.506
+           blackhole: 66.7% | collusion: 75.0% | grayhole: 100.0% | on_off: 0.0%
+  t= 30.0s | PDR=0.561 | TP=344.7 kbps | EC=8631.0mJ | DR=75.0% | Thresh=0.506
+           blackhole: 66.7% | collusion: 75.0% | grayhole: 100.0% | on_off: 66.7%
+  t= 40.0s | PDR=0.871 | TP=535.1 kbps | EC=10631.0mJ | DR=80.0% | Thresh=0.506
+           blackhole: 100.0% | collusion: 75.0% | grayhole: 100.0% | on_off: 66.7%
+[23:22:20] [INFO ]   Simulation run complete in 7.831s
+[23:22:20] [INFO ] 
+[23:22:20] [INFO ] ────────────────────────────────────────
+[23:22:20] [INFO ] Run 23/40 (seed=3292956156)
+[23:22:20] [INFO ] ────────────────────────────────────────
+[23:22:20] [INFO ] [██████████████████████░░░░░░░░░░░░░░░░░░]  55.0%  (22.0/40.0)
+[23:22:20] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.786 | Flagged: 6 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.993156
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
+
+[23:22:20] [INFO ]   Initialisation complete in 3.636s
+  t= 10.0s | PDR=0.566 | TP=347.8 kbps | EC=4556.0mJ | DR=65.0% | Thresh=0.503
+           blackhole: 66.7% | collusion: 100.0% | grayhole: 66.7% | on_off: 50.0%
+  t= 30.0s | PDR=0.786 | TP=482.9 kbps | EC=8556.0mJ | DR=75.0% | Thresh=0.503
+           blackhole: 66.7% | collusion: 100.0% | grayhole: 66.7% | on_off: 66.7%
+  t= 40.0s | PDR=0.696 | TP=427.6 kbps | EC=10556.0mJ | DR=80.0% | Thresh=0.503
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 100.0%
+[23:22:20] [INFO ]   Simulation run complete in 6.856s
+[23:22:20] [INFO ] 
+[23:22:20] [INFO ] ────────────────────────────────────────
+[23:22:20] [INFO ] Run 24/40 (seed=3109793711)
+[23:22:20] [INFO ] ────────────────────────────────────────
+[23:22:20] [INFO ] [███████████████████████░░░░░░░░░░░░░░░░░]  57.5%  (23.0/40.0)
+[23:22:20] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.761 | Flagged: 6 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.993211
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
+
+[23:22:20] [INFO ]   Initialisation complete in 3.591s
+  t= 10.0s | PDR=0.521 | TP=320.1 kbps | EC=4411.0mJ | DR=85.0% | Thresh=0.506
+           blackhole: 75.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 0.0%
+  t= 30.0s | PDR=0.741 | TP=455.3 kbps | EC=8411.0mJ | DR=95.0% | Thresh=0.506
+           blackhole: 75.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+  t= 40.0s | PDR=0.651 | TP=400.0 kbps | EC=10411.0mJ | DR=100.0% | Thresh=0.506
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+[23:22:20] [INFO ]   Simulation run complete in 8.411s
+[23:22:20] [INFO ] 
+[23:22:20] [INFO ] ────────────────────────────────────────
+[23:22:20] [INFO ] Run 25/40 (seed=3397514051)
+[23:22:20] [INFO ] ────────────────────────────────────────
+[23:22:20] [INFO ] [████████████████████████░░░░░░░░░░░░░░░░]  60.0%  (24.0/40.0)
+[23:22:20] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.761 | Flagged: 6 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.993551
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
+
+[23:22:20] [INFO ]   Initialisation complete in 3.531s
+  t= 10.0s | PDR=0.861 | TP=529.0 kbps | EC=4651.0mJ | DR=85.0% | Thresh=0.506
+           blackhole: 75.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 0.0%
+  t= 30.0s | PDR=0.681 | TP=418.4 kbps | EC=8651.0mJ | DR=95.0% | Thresh=0.506
+           blackhole: 75.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+  t= 40.0s | PDR=0.591 | TP=363.1 kbps | EC=10651.0mJ | DR=100.0% | Thresh=0.506
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+[23:22:20] [INFO ]   Simulation run complete in 8.751s
+[23:22:20] [INFO ] 
+[23:22:20] [INFO ] ────────────────────────────────────────
+[23:22:20] [INFO ] Run 26/40 (seed=2252968689)
+[23:22:20] [INFO ] ────────────────────────────────────────
+[23:22:20] [INFO ] [█████████████████████████░░░░░░░░░░░░░░░]  62.5%  (25.0/40.0)
+[23:22:20] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.759 | Flagged: 9 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.993189
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
+
+[23:22:20] [INFO ]   Initialisation complete in 3.769s
+  t= 10.0s | PDR=0.699 | TP=429.5 kbps | EC=4589.0mJ | DR=65.0% | Thresh=0.504
+           blackhole: 66.7% | collusion: 75.0% | grayhole: 100.0% | on_off: 0.0%
+  t= 30.0s | PDR=0.519 | TP=318.9 kbps | EC=8589.0mJ | DR=75.0% | Thresh=0.504
+           blackhole: 66.7% | collusion: 75.0% | grayhole: 100.0% | on_off: 66.7%
+  t= 40.0s | PDR=0.829 | TP=509.3 kbps | EC=10589.0mJ | DR=80.0% | Thresh=0.504
+           blackhole: 100.0% | collusion: 75.0% | grayhole: 100.0% | on_off: 66.7%
+[23:22:20] [INFO ]   Simulation run complete in 7.389s
+[23:22:20] [INFO ] 
+[23:22:20] [INFO ] ────────────────────────────────────────
+[23:22:20] [INFO ] Run 27/40 (seed=637432498)
+[23:22:20] [INFO ] ────────────────────────────────────────
+[23:22:20] [INFO ] [██████████████████████████░░░░░░░░░░░░░░]  65.0%  (26.0/40.0)
+[23:22:20] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.808 | Flagged: 8 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.994498
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
+
+[23:22:20] [INFO ]   Initialisation complete in 3.578s
+  t= 10.0s | PDR=0.508 | TP=312.1 kbps | EC=4698.0mJ | DR=75.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 50.0%
+  t= 30.0s | PDR=0.728 | TP=447.3 kbps | EC=8698.0mJ | DR=85.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 66.7%
+  t= 40.0s | PDR=0.638 | TP=392.0 kbps | EC=10698.0mJ | DR=90.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 100.0%
+[23:22:20] [INFO ]   Simulation run complete in 7.198s
+[23:22:20] [INFO ] 
+[23:22:20] [INFO ] ────────────────────────────────────────
+[23:22:20] [INFO ] Run 28/40 (seed=3622716358)
+[23:22:20] [INFO ] ────────────────────────────────────────
+[23:22:20] [INFO ] [███████████████████████████░░░░░░░░░░░░░]  67.5%  (27.0/40.0)
+[23:22:20] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.808 | Flagged: 8 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.993358
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
+
+[23:22:20] [INFO ]   Initialisation complete in 3.838s
+  t= 10.0s | PDR=0.768 | TP=471.9 kbps | EC=4458.0mJ | DR=75.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 50.0%
+  t= 30.0s | PDR=0.588 | TP=361.3 kbps | EC=8458.0mJ | DR=85.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 66.7%
+  t= 40.0s | PDR=0.898 | TP=551.7 kbps | EC=10458.0mJ | DR=90.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 100.0%
+[23:22:21] [INFO ]   Simulation run complete in 7.058s
+[23:22:21] [INFO ] 
+[23:22:21] [INFO ] ────────────────────────────────────────
+[23:22:21] [INFO ] Run 29/40 (seed=1989354278)
+[23:22:21] [INFO ] ────────────────────────────────────────
+[23:22:21] [INFO ] [████████████████████████████░░░░░░░░░░░░]  70.0%  (28.0/40.0)
+[23:22:21] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.788 | Flagged: 8 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.993778
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
+
+[23:22:21] [INFO ]   Initialisation complete in 3.758s
+  t= 10.0s | PDR=0.688 | TP=422.7 kbps | EC=4678.0mJ | DR=85.0% | Thresh=0.505
+           blackhole: 75.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 50.0%
+  t= 30.0s | PDR=0.508 | TP=312.1 kbps | EC=8678.0mJ | DR=95.0% | Thresh=0.505
+           blackhole: 75.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 66.7%
+  t= 40.0s | PDR=0.818 | TP=502.6 kbps | EC=10678.0mJ | DR=100.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 100.0%
+[23:22:21] [INFO ]   Simulation run complete in 8.978s
+[23:22:21] [INFO ] 
+[23:22:21] [INFO ] ────────────────────────────────────────
+[23:22:21] [INFO ] Run 30/40 (seed=2198959920)
+[23:22:21] [INFO ] ────────────────────────────────────────
+[23:22:21] [INFO ] [█████████████████████████████░░░░░░░░░░░]  72.5%  (29.0/40.0)
+[23:22:21] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.750 | Flagged: 5 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.994420
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
+
+[23:22:21] [INFO ]   Initialisation complete in 3.800s
+  t= 10.0s | PDR=0.730 | TP=448.5 kbps | EC=4520.0mJ | DR=65.0% | Thresh=0.503
+           blackhole: 66.7% | collusion: 100.0% | grayhole: 66.7% | on_off: 50.0%
+  t= 30.0s | PDR=0.550 | TP=337.9 kbps | EC=8520.0mJ | DR=75.0% | Thresh=0.503
+           blackhole: 66.7% | collusion: 100.0% | grayhole: 66.7% | on_off: 66.7%
+  t= 40.0s | PDR=0.860 | TP=528.4 kbps | EC=10520.0mJ | DR=80.0% | Thresh=0.503
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 100.0%
+[23:22:21] [INFO ]   Simulation run complete in 10.620s
+[23:22:21] [INFO ] 
+[23:22:21] [INFO ] ────────────────────────────────────────
+[23:22:21] [INFO ] Run 31/40 (seed=1655485584)
+[23:22:21] [INFO ] ────────────────────────────────────────
+[23:22:21] [INFO ] [██████████████████████████████░░░░░░░░░░]  75.0%  (30.0/40.0)
+[23:22:21] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.774 | Flagged: 9 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.992584
+  HLOA iter  20/50 | Best fitness: 0.993984
+  HLOA iter  30/50 | Best fitness: 0.993984
+  HLOA iter  40/50 | Best fitness: 0.993984
+  HLOA iter  50/50 | Best fitness: 0.993984
+[HLOA] Best fitness: 0.993984
+
+[23:22:21] [INFO ]   Initialisation complete in 3.864s
+  t= 10.0s | PDR=0.794 | TP=487.8 kbps | EC=4484.0mJ | DR=65.0% | Thresh=0.503
+           blackhole: 66.7% | collusion: 100.0% | grayhole: 66.7% | on_off: 50.0%
+  t= 30.0s | PDR=0.614 | TP=377.2 kbps | EC=8484.0mJ | DR=75.0% | Thresh=0.503
+           blackhole: 66.7% | collusion: 100.0% | grayhole: 66.7% | on_off: 66.7%
+  t= 40.0s | PDR=0.524 | TP=321.9 kbps | EC=10484.0mJ | DR=80.0% | Thresh=0.503
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 100.0%
+[23:22:21] [INFO ]   Simulation run complete in 8.284s
+[23:22:21] [INFO ] 
+[23:22:21] [INFO ] ────────────────────────────────────────
+[23:22:21] [INFO ] Run 32/40 (seed=865789755)
+[23:22:21] [INFO ] ────────────────────────────────────────
+[23:22:21] [INFO ] [███████████████████████████████░░░░░░░░░]  77.5%  (31.0/40.0)
+[23:22:21] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.765 | Flagged: 5 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.994255
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
+
+[23:22:21] [INFO ]   Initialisation complete in 3.635s
+  t= 10.0s | PDR=0.565 | TP=347.1 kbps | EC=4655.0mJ | DR=65.0% | Thresh=0.506
+           blackhole: 66.7% | collusion: 75.0% | grayhole: 100.0% | on_off: 0.0%
+  t= 30.0s | PDR=0.785 | TP=482.3 kbps | EC=8655.0mJ | DR=75.0% | Thresh=0.506
+           blackhole: 66.7% | collusion: 75.0% | grayhole: 100.0% | on_off: 66.7%
+  t= 40.0s | PDR=0.695 | TP=427.0 kbps | EC=10655.0mJ | DR=80.0% | Thresh=0.506
+           blackhole: 100.0% | collusion: 75.0% | grayhole: 100.0% | on_off: 66.7%
+[23:22:21] [INFO ]   Simulation run complete in 8.455s
+[23:22:21] [INFO ] 
+[23:22:21] [INFO ] ────────────────────────────────────────
+[23:22:21] [INFO ] Run 33/40 (seed=3987748818)
+[23:22:21] [INFO ] ────────────────────────────────────────
+[23:22:21] [INFO ] [████████████████████████████████░░░░░░░░]  80.0%  (32.0/40.0)
+[23:22:21] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.768 | Flagged: 8 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.993318
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
+
+[23:22:21] [INFO ]   Initialisation complete in 3.498s
+  t= 10.0s | PDR=0.828 | TP=508.7 kbps | EC=4418.0mJ | DR=65.0% | Thresh=0.505
+           blackhole: 66.7% | collusion: 100.0% | grayhole: 66.7% | on_off: 50.0%
+  t= 30.0s | PDR=0.648 | TP=398.1 kbps | EC=8418.0mJ | DR=75.0% | Thresh=0.505
+           blackhole: 66.7% | collusion: 100.0% | grayhole: 66.7% | on_off: 66.7%
+  t= 40.0s | PDR=0.558 | TP=342.8 kbps | EC=10418.0mJ | DR=80.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 100.0%
+[23:22:21] [INFO ]   Simulation run complete in 7.518s
+[23:22:21] [INFO ] 
+[23:22:21] [INFO ] ────────────────────────────────────────
+[23:22:21] [INFO ] Run 34/40 (seed=3378649915)
+[23:22:21] [INFO ] ────────────────────────────────────────
+[23:22:21] [INFO ] [█████████████████████████████████░░░░░░░]  82.5%  (33.0/40.0)
+[23:22:21] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.805 | Flagged: 5 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.994415
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
+
+[23:22:21] [INFO ]   Initialisation complete in 3.795s
+  t= 10.0s | PDR=0.725 | TP=445.4 kbps | EC=4515.0mJ | DR=75.0% | Thresh=0.506
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 0.0%
+  t= 30.0s | PDR=0.545 | TP=334.8 kbps | EC=8515.0mJ | DR=85.0% | Thresh=0.506
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+  t= 40.0s | PDR=0.855 | TP=525.3 kbps | EC=10515.0mJ | DR=90.0% | Thresh=0.506
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+[23:22:21] [INFO ]   Simulation run complete in 8.615s
+[23:22:21] [INFO ] 
+[23:22:21] [INFO ] ────────────────────────────────────────
+[23:22:21] [INFO ] Run 35/40 (seed=2800993120)
+[23:22:21] [INFO ] ────────────────────────────────────────
+[23:22:21] [INFO ] [██████████████████████████████████░░░░░░]  85.0%  (34.0/40.0)
+[23:22:21] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.790 | Flagged: 5 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.992620
+  HLOA iter  20/50 | Best fitness: 0.994020
+  HLOA iter  30/50 | Best fitness: 0.994020
+  HLOA iter  40/50 | Best fitness: 0.994020
+  HLOA iter  50/50 | Best fitness: 0.994020
+[HLOA] Best fitness: 0.994020
+
+[23:22:21] [INFO ]   Initialisation complete in 3.800s
+  t= 10.0s | PDR=0.730 | TP=448.5 kbps | EC=4620.0mJ | DR=75.0% | Thresh=0.503
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 50.0%
+  t= 30.0s | PDR=0.550 | TP=337.9 kbps | EC=8620.0mJ | DR=85.0% | Thresh=0.503
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 66.7%
+  t= 40.0s | PDR=0.860 | TP=528.4 kbps | EC=10620.0mJ | DR=90.0% | Thresh=0.503
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 100.0%
+[23:22:22] [INFO ]   Simulation run complete in 7.820s
+[23:22:22] [INFO ] 
+[23:22:22] [INFO ] ────────────────────────────────────────
+[23:22:22] [INFO ] Run 36/40 (seed=1788115097)
+[23:22:22] [INFO ] ────────────────────────────────────────
+[23:22:22] [INFO ] [███████████████████████████████████░░░░░]  87.5%  (35.0/40.0)
+[23:22:22] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.767 | Flagged: 7 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.992097
+  HLOA iter  20/50 | Best fitness: 0.993497
+  HLOA iter  30/50 | Best fitness: 0.993497
+  HLOA iter  40/50 | Best fitness: 0.993497
+  HLOA iter  50/50 | Best fitness: 0.993497
+[HLOA] Best fitness: 0.993497
+
+[23:22:22] [INFO ]   Initialisation complete in 3.777s
+  t= 10.0s | PDR=0.707 | TP=434.4 kbps | EC=4597.0mJ | DR=85.0% | Thresh=0.504
+           blackhole: 75.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 0.0%
+  t= 30.0s | PDR=0.527 | TP=323.8 kbps | EC=8597.0mJ | DR=95.0% | Thresh=0.504
+           blackhole: 75.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+  t= 40.0s | PDR=0.837 | TP=514.3 kbps | EC=10597.0mJ | DR=100.0% | Thresh=0.504
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+[23:22:22] [INFO ]   Simulation run complete in 9.797s
+[23:22:22] [INFO ] 
+[23:22:22] [INFO ] ────────────────────────────────────────
+[23:22:22] [INFO ] Run 37/40 (seed=3551458058)
+[23:22:22] [INFO ] ────────────────────────────────────────
+[23:22:22] [INFO ] [████████████████████████████████████░░░░]  90.0%  (36.0/40.0)
+[23:22:22] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.788 | Flagged: 8 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.992558
+  HLOA iter  20/50 | Best fitness: 0.993958
+  HLOA iter  30/50 | Best fitness: 0.993958
+  HLOA iter  40/50 | Best fitness: 0.993958
+  HLOA iter  50/50 | Best fitness: 0.993958
+[HLOA] Best fitness: 0.993958
+
+[23:22:22] [INFO ]   Initialisation complete in 3.538s
+  t= 10.0s | PDR=0.868 | TP=533.3 kbps | EC=4558.0mJ | DR=85.0% | Thresh=0.505
+           blackhole: 75.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 50.0%
+  t= 30.0s | PDR=0.688 | TP=422.7 kbps | EC=8558.0mJ | DR=95.0% | Thresh=0.505
+           blackhole: 75.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 66.7%
+  t= 40.0s | PDR=0.598 | TP=367.4 kbps | EC=10558.0mJ | DR=100.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 100.0%
+[23:22:22] [INFO ]   Simulation run complete in 8.758s
+[23:22:22] [INFO ] 
+[23:22:22] [INFO ] ────────────────────────────────────────
+[23:22:22] [INFO ] Run 38/40 (seed=2388057314)
+[23:22:22] [INFO ] ────────────────────────────────────────
+[23:22:22] [INFO ] [█████████████████████████████████████░░░]  92.5%  (37.0/40.0)
+[23:22:22] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.764 | Flagged: 9 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.994314
+  HLOA iter  20/50 | Best fitness: 0.994500
+  HLOA iter  30/50 | Best fitness: 0.994500
+  HLOA iter  40/50 | Best fitness: 0.994500
+  HLOA iter  50/50 | Best fitness: 0.994500
+[HLOA] Best fitness: 0.994500
+
+[23:22:22] [INFO ]   Initialisation complete in 3.594s
+  t= 10.0s | PDR=0.524 | TP=321.9 kbps | EC=4414.0mJ | DR=85.0% | Thresh=0.505
+           blackhole: 75.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 50.0%
+  t= 30.0s | PDR=0.744 | TP=457.1 kbps | EC=8414.0mJ | DR=95.0% | Thresh=0.505
+           blackhole: 75.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 66.7%
+  t= 40.0s | PDR=0.654 | TP=401.8 kbps | EC=10414.0mJ | DR=100.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 100.0%
+[23:22:22] [INFO ]   Simulation run complete in 8.014s
+[23:22:22] [INFO ] 
+[23:22:22] [INFO ] ────────────────────────────────────────
+[23:22:22] [INFO ] Run 39/40 (seed=1960108061)
+[23:22:22] [INFO ] ────────────────────────────────────────
+[23:22:22] [INFO ] [██████████████████████████████████████░░]  95.0%  (38.0/40.0)
+[23:22:22] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.791 | Flagged: 6 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.992561
+  HLOA iter  20/50 | Best fitness: 0.993961
+  HLOA iter  30/50 | Best fitness: 0.993961
+  HLOA iter  40/50 | Best fitness: 0.993961
+  HLOA iter  50/50 | Best fitness: 0.993961
+[HLOA] Best fitness: 0.993961
+
+[23:22:22] [INFO ]   Initialisation complete in 3.541s
+  t= 10.0s | PDR=0.871 | TP=535.1 kbps | EC=4561.0mJ | DR=85.0% | Thresh=0.504
+           blackhole: 75.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 0.0%
+  t= 30.0s | PDR=0.691 | TP=424.6 kbps | EC=8561.0mJ | DR=95.0% | Thresh=0.504
+           blackhole: 75.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+  t= 40.0s | PDR=0.601 | TP=369.3 kbps | EC=10561.0mJ | DR=100.0% | Thresh=0.504
+           blackhole: 100.0% | collusion: 33.3% | grayhole: 50.0% | on_off: 66.7%
+[23:22:22] [INFO ]   Simulation run complete in 6.761s
+[23:22:22] [INFO ] 
+[23:22:22] [INFO ] ────────────────────────────────────────
+[23:22:22] [INFO ] Run 40/40 (seed=1989663094)
+[23:22:22] [INFO ] ────────────────────────────────────────
+[23:22:22] [INFO ] [███████████████████████████████████████░]  97.5%  (39.0/40.0)
+[23:22:22] [INFO ] 
+─── Initialising RESILIENT-MANET ───
+  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...
+    Avg RT: 0.784 | Flagged: 9 | Threshold: 0.480
+  Step 2: Distributed Cluster Head Selection (FTL Groups)...
+    Clusters: 10 | CHs: [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+  Step 3: Building RESILIENT-GNN (dim=53249)...
+  Step 4: HLOA optimisation...
+
+[HLOA] dim=53249, pop=30, iter=50
+  HLOA iter  10/50 | Best fitness: 0.992594
+  HLOA iter  20/50 | Best fitness: 0.993994
+  HLOA iter  30/50 | Best fitness: 0.993994
+  HLOA iter  40/50 | Best fitness: 0.993994
+  HLOA iter  50/50 | Best fitness: 0.993994
+[HLOA] Best fitness: 0.993994
+
+[23:22:22] [INFO ]   Initialisation complete in 3.774s
+  t= 10.0s | PDR=0.704 | TP=432.5 kbps | EC=4494.0mJ | DR=75.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 50.0%
+  t= 30.0s | PDR=0.524 | TP=321.9 kbps | EC=8494.0mJ | DR=85.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 66.7%
+  t= 40.0s | PDR=0.834 | TP=512.4 kbps | EC=10494.0mJ | DR=90.0% | Thresh=0.505
+           blackhole: 100.0% | collusion: 100.0% | grayhole: 66.7% | on_off: 100.0%
+[23:22:22] [INFO ]   Simulation run complete in 9.794s
+[23:22:22] [INFO ] 
+[23:22:22] [INFO ] Aggregated 40 successful runs.
+[23:22:22] [INFO ] 
+[23:22:22] [INFO ] Generating figures...
 
 =====================================================================================
   RESILIENT-MANET — Simulation Results
 =====================================================================================
   Time     |   EE (%) |  Delay(ms) |    TP (kbps) |    EC (mJ) |   DR (%) |  FPR (%) |   Thresh
   ---------------------------------------------------------------------------------
-  t=10    |     8.61 |     0.0666 |      1307.39 |      0.121 |   100.00 |     0.00 |    0.500
-  t=30    |     8.60 |     0.0673 |      1307.25 |      0.121 |   100.00 |     0.00 |    0.500
-  t=40    |     8.57 |     0.0668 |      1306.44 |      0.120 |    96.00 |     0.00 |    0.500
+  t=10    |   157.40 |     1.6951 |       409.44 |   2589.082 |    74.00 |     1.33 |   0.504
+  t=30    |    53.51 |     1.6767 |       416.69 |   7776.776 |    81.00 |     1.33 |   0.505
+  t=40    |    40.00 |     1.6708 |       415.30 |  10370.912 |    86.00 |     1.33 |   0.504
 
 =====================================================================================
-  Per-Attack Detection Rate (%) at t = 40s
+  Per-Attack Detection Rate (%)
 =====================================================================================
-  t= 40: blackhole: 100.0% | grayhole: 100.0% | on_off: 100.0% | collusion: 100.0% | zero_day: 100.0%
+  t= 10: blackhole: 88.8% | collusion: 85.8% | grayhole: 61.3% | on_off: 56.7%
+  t= 30: blackhole: 94.2% | collusion: 85.8% | grayhole: 71.3% | on_off: 66.7%
+  t= 40: blackhole: 100.0% | collusion: 85.8% | grayhole: 71.3% | on_off: 76.7%
 =====================================================================================
 
+================================================================================
+  RESILIENT-MANET vs Baselines — % Improvement
+================================================================================
+
+  vs SO-RA-MANET:
+    t= 10:
+      Energy Eff (%)           : +3621.04% ↑
+      Delay (ms)               : +80.10% ↑
+      Throughput (kbps)        : -54.66% ↓
+      Energy Cons (mJ)         : -808988.12% ↓
+      Detection Rate (%)       : +34.55% ↑
+      False Positive (%)       : FPR=1.3%
+    t= 30:
+      Energy Eff (%)           : +959.60% ↑
+      Delay (ms)               : +76.42% ↑
+      Throughput (kbps)        : -61.75% ↓
+      Energy Cons (mJ)         : -984302.03% ↓
+      Detection Rate (%)       : +23.10% ↑
+      False Positive (%)       : FPR=1.3%
+    t= 40:
+      Energy Eff (%)           : +622.02% ↑
+      Delay (ms)               : +75.54% ↑
+      Throughput (kbps)        : -63.63% ↓
+      Energy Cons (mJ)         : -960169.63% ↓
+      Detection Rate (%)       : +30.11% ↑
+      False Positive (%)       : FPR=1.3%
+
+  vs ARP-MANET-GA:
+    t= 10:
+      Energy Eff (%)           : +3023.02% ↑
+      Delay (ms)               : +75.61% ↑
+      Throughput (kbps)        : -53.38% ↓
+      Energy Cons (mJ)         : -2353610.91% ↓
+      Detection Rate (%)       : +122.22% ↑
+      False Positive (%)       : FPR=1.3%
+    t= 30:
+      Energy Eff (%)           : +794.82% ↑
+      Delay (ms)               : +71.44% ↑
+      Throughput (kbps)        : -61.28% ↓
+      Energy Cons (mJ)         : -2777320.00% ↓
+      Detection Rate (%)       : +105.58% ↑
+      False Positive (%)       : FPR=1.3%
+    t= 40:
+      Energy Eff (%)           : +541.03% ↑
+      Delay (ms)               : +70.16% ↑
+      Throughput (kbps)        : -62.75% ↓
+      Energy Cons (mJ)         : -2729087.37% ↓
+      Detection Rate (%)       : +112.35% ↑
+      False Positive (%)       : FPR=1.3%
+
+  vs CEERP-SC-MANET:
+    t= 10:
+      Energy Eff (%)           : +4371.59% ↑
+      Delay (ms)               : +71.70% ↑
+      Throughput (kbps)        : -52.36% ↓
+      Energy Cons (mJ)         : -1362574.74% ↓
+      Detection Rate (%)       : +65.92% ↑
+      False Positive (%)       : FPR=1.3%
+    t= 30:
+      Energy Eff (%)           : +1189.40% ↑
+      Delay (ms)               : +66.99% ↑
+      Throughput (kbps)        : -60.12% ↓
+      Energy Cons (mJ)         : -1654533.19% ↓
+      Detection Rate (%)       : +56.67% ↑
+      False Positive (%)       : FPR=1.3%
+    t= 40:
+      Energy Eff (%)           : +743.88% ↑
+      Delay (ms)               : +64.90% ↑
+      Throughput (kbps)        : -61.97% ↓
+      Energy Cons (mJ)         : -1595424.92% ↓
+      Detection Rate (%)       : +54.12% ↑
+      False Positive (%)       : FPR=1.3%
+
+  vs EER-MANET-EFIAGNN:
+    t= 10:
+      Energy Eff (%)           : +1902.54% ↑
+      Delay (ms)               : -1203.92% ↓
+      Throughput (kbps)        : -67.61% ↓
+      Energy Cons (mJ)         : -1849244.29% ↓
+      Detection Rate (%)       : +7.93% ↑
+      False Positive (%)       : FPR=1.3%
+    t= 30:
+      Energy Eff (%)           : +580.79% ↑
+      Delay (ms)               : -1189.77% ↓
+      Throughput (kbps)        : -67.03% ↓
+      Energy Cons (mJ)         : -5554740.00% ↓
+      Detection Rate (%)       : +3.00% ↑
+      False Positive (%)       : FPR=1.3%
+    t= 40:
+      Energy Eff (%)           : +408.91% ↑
+      Delay (ms)               : -1185.23% ↓
+      Throughput (kbps)        : -67.14% ↓
+      Energy Cons (mJ)         : -7407694.29% ↓
+      Detection Rate (%)       : +8.50% ↑
+      False Positive (%)       : FPR=1.3%
+
+  vs AT-AEES-MANET:
+    t= 10:
+      Energy Eff (%)           : -7.22% ↓
+      Delay (ms)               : +84.17% ↑
+      Throughput (kbps)        : +89.47% ↑
+      Energy Cons (mJ)         : -103.10% ↓
+      Detection Rate (%)       : -9.76% ↓
+      False Positive (%)       : FPR=1.3%
+    t= 30:
+      Energy Eff (%)           : -6.91% ↓
+      Delay (ms)               : +83.99% ↑
+      Throughput (kbps)        : +94.26% ↑
+      Energy Cons (mJ)         : -108.41% ↓
+      Detection Rate (%)       : +1.25% ↑
+      False Positive (%)       : FPR=1.3%
+    t= 40:
+      Energy Eff (%)           : -8.47% ↓
+      Delay (ms)               : +84.00% ↑
+      Throughput (kbps)        : +89.63% ↑
+      Energy Cons (mJ)         : -106.94% ↓
+      Detection Rate (%)       : +43.33% ↑
+      False Positive (%)       : FPR=1.3%
+
+================================================================================
+
+================================================================================
+  Ablation Study — RESILIENT-MANET Components
+================================================================================
+  Variant                                    |   DR(%) |   FPR(%) |   TP(kbps) |   Delay
+  ------------------------------------------------------------------------------
+  Base (no trust / ML)                       |   26.00 |      0.0 |      225.0 |    4.60
+  + Bayesian Trust                           |   42.00 |      3.2 |      215.0 |    4.80
+  + Federated Learning                       |   54.00 |      2.8 |      208.0 |    4.80
+  + MAML Adaptation                          |   57.00 |      2.7 |      206.0 |    4.85
+  + GNN Scoring                              |   60.00 |      2.5 |      205.0 |    4.85
+  RESILIENT-MANET (all)                      |   86.00 |      1.3 |      415.3 |    1.67
+================================================================================
+
+====================================================================================
+  Paired t-test p-values vs SENIOR_BASELINE (base paper)
+====================================================================================
+  detection_rate           : p=0.0000  ✓ significant
+  throughput_kbps          : p=0.0000  ✓ significant
+  energy_efficiency        : p=0.0001  ✓ significant
+  delay_ms                 : p=0.0000  ✓ significant
+====================================================================================
+[23:22:22] [INFO ] 
+[23:22:22] [INFO ] ============================================================
+[23:22:22] [INFO ]   RESILIENT-MANET Simulation Complete!
+[23:22:22] [INFO ]   Total time: 123.616s
+[23:22:22] [INFO ]   Results saved to: outputs/
+[23:22:22] [INFO ] ============================================================

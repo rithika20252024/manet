@@ -20,13 +20,41 @@ from RESILIENT_MANET_STANDALONE.modules.resilient_manet_engine import ResilientM
 from RESILIENT_MANET_STANDALONE.ns3_scripts.ns3_trace_parser import parse_ns3_trace_data
 
 
-def get_logger(name):
+class DualWriter:
+    def __init__(self, *files):
+        self.files = files
+
+    def write(self, obj):
+        for f in self.files:
+            try:
+                f.write(obj)
+                f.flush()
+            except Exception:
+                pass
+
+    def flush(self):
+        for f in self.files:
+            try:
+                f.flush()
+            except Exception:
+                pass
+
+
+def get_logger(name, log_file=None):
     logger = logging.getLogger(name)
-    if not logger.handlers:
-        h = logging.StreamHandler(sys.stdout)
-        h.setFormatter(logging.Formatter('[%(asctime)s] [%(levelname)-5s] %(message)s', datefmt='%H:%M:%S'))
-        logger.addHandler(h)
-        logger.setLevel(logging.INFO)
+    logger.handlers.clear()
+    formatter = logging.Formatter('[%(asctime)s] [%(levelname)-5s] %(message)s', datefmt='%H:%M:%S')
+    
+    h_stdout = logging.StreamHandler(sys.stdout)
+    h_stdout.setFormatter(formatter)
+    logger.addHandler(h_stdout)
+    
+    if log_file:
+        h_file = logging.FileHandler(log_file, mode='w', encoding='utf-8')
+        h_file.setFormatter(formatter)
+        logger.addHandler(h_file)
+        
+    logger.setLevel(logging.INFO)
     return logger
 
 
@@ -94,6 +122,14 @@ def compute_improvements(summary_dict, method):
 
 
 def main():
+    out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'outputs')
+    os.makedirs(out_dir, exist_ok=True)
+    log_path = os.path.join(out_dir, 'resilient_manet_execution.log')
+    log_file_obj = open(log_path, 'w', encoding='utf-8')
+    
+    orig_stdout = sys.stdout
+    sys.stdout = DualWriter(orig_stdout, log_file_obj)
+    
     logger = get_logger("RESILIENT-MANET")
 
     logger.info("=" * 60)
@@ -160,8 +196,9 @@ def main():
         print(f"  Step 1: Bootstrapping Dynamic Bayesian Trust (Beta posteriors)...")
         print(f"    Avg RT: {avg_rt:.3f} | Flagged: {flagged_count} | Threshold: 0.480")
 
+        ch_int_list = [int(x) for x in sim.cluster_heads]
         print(f"  Step 2: Distributed Cluster Head Selection (FTL Groups)...")
-        print(f"    Clusters: 10 | CHs: {sim.cluster_heads}")
+        print(f"    Clusters: 10 | CHs: {ch_int_list}")
 
         print(f"  Step 3: Building RESILIENT-GNN (dim=53249)...")
         print(f"  Step 4: HLOA optimisation...\n")
@@ -284,10 +321,22 @@ def main():
     logger.info("=" * 60)
 
     # Save outputs
-    out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'outputs')
-    os.makedirs(out_dir, exist_ok=True)
     with open(os.path.join(out_dir, 'resilient_manet_final_benchmark.json'), 'w') as f:
         json.dump(summary, f, indent=2)
+
+    sys.stdout = orig_stdout
+    log_file_obj.flush()
+    log_file_obj.close()
+
+    # Mirror outputs to Desktop folder if it exists and is not the current working directory
+    desktop_dir = '/Users/rithika/Desktop/RESILIENT_MANET_STANDALONE'
+    if os.path.exists(desktop_dir):
+        import shutil
+        desktop_outputs = os.path.join(desktop_dir, 'outputs')
+        if os.path.abspath(out_dir) != os.path.abspath(desktop_outputs):
+            os.makedirs(desktop_outputs, exist_ok=True)
+            shutil.copy2(os.path.join(out_dir, 'resilient_manet_execution.log'), os.path.join(desktop_outputs, 'resilient_manet_execution.log'))
+            shutil.copy2(os.path.join(out_dir, 'resilient_manet_final_benchmark.json'), os.path.join(desktop_outputs, 'resilient_manet_final_benchmark.json'))
 
 
 if __name__ == '__main__':
